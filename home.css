@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+main{
+    margin: auto;
+}
+
+header{
+    background-color: antiquewhite;
+    display: flex;
+    align-items:center;
+    flex-direction: row;
+}
+
+header img{
+    width: 80px;
+}
+
+header p{
+    width: 50%;
+    font-family: verdana;
+    font-size: 25px;
+    font-weight: 100px;
+
+}
+
+#containerbotoes{
+    width: 50%;
+    display: flex;
+    align-items:center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#containerbotoes button{
+    width: 20%;
+    background-color: yellow;
+    border-radius: 50px;
+}
+
+h1{
+    font-family: verdana;
+    font-size: 40px;
+}
