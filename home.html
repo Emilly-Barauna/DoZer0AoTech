@@ -3,69 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>do zer0 ao TECH</title>
-    <link rel="stylesheet" href="css/home.css">
+    <title>Do Zer0 ao Tech</title>
+    <link rel="stylesheet" href="home.css" type="text/css">
 </head>
 <body>
-    <main>
-        <header>
-            <img src="assets/0f1fec9f-a458-4410-8bdd-3564a140e123.png" alt="lumi logo">
-            <p>Do Zer0 ao Tech</p>
-            <div id="containerbotoes">
-                <button>Teste Vocacional</button>
-                <button>Cursos</button>
-                <button>Sobre</button>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="assets/lumi-logo.png" alt="Lumi logo">
+                <span>DoZeroAoTech</span>
             </div>
-        </header>
-        <h1>Tecnologia parece um Labirinto</h1>
-        <p>A Lumi pode ser sua estrela guia que te mostra o caminho.</p>
-        <p>Descubra quais áreas combinam com você, conheça as possibilidades da tecnologia e dê seus primeiros passos para começar sua jornada.</p>
-
-        <button>Fazer o Teste Vocacional</button>
-        <button>Explorar Áreas</button>
-
-        <img src="assets/" alt="lumi porta">
-
-        <h2>O que é Do Zero ao Tech</h2>
-        <p>Entrar na tecnologia pode parecer confuso, mas você não precisa saber programar para começar. O Do Zero ao Tech reúne carreiras, conteúdos, ferramentas e cursos para ajudar você a encontrar seu caminho. Com a Lumi ⭐ como estrela-guia, fica mais fácil descobrir possibilidades e dar o primeiro passo no seu ritmo.</p>
-
-        <div id="frase da lumi">
-            <img src="assets/" alt="lumi logo">
-            <p>FRASE DA LUMI</p>
-            <p>Eu sei que entrar no mundo da tecnologia pode parecer um pouco confuso no começo. Tantas áreas, linguagens, cursos… por onde começar? 😅</p>
-            <p>É justamente para isso que eu estou aqui! Preparei um mapinha com os primeiros passos para te ajudar a encontrar um caminho, descobrir o que aprender e chegar até o seu primeiro projeto.</p>
-            <p>Vem comigo? Eu te mostro o caminho.</p>
+            <nav class="nav-menu">
+                <a href="#" class="active">Home</a>
+                <a href="#">Teste Vocacional</a>
+                <a href="#">Cursos</a>
+                <a href="#">Sobre Nós</a>
+            </nav>
         </div>
+    </header>
 
-        <h3>Entenda seu caminho conosco</h3>
-        <p>MAPA DO CAMINHO</p>
-        <img src="assets/" alt="lumi porta">
-        <div id="containerTopicos">
-            <div>
-                <h4>Descubra uma área que combina com você</h4>
-                <p>Ainda está em dúvida? Faça o teste vocacional e encontre caminhos relacionados aos seus interesses.</p>
+    <main class="main-container">
+        
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Tecnologia parece um Labirinto</h1>
+                <p class="hero-subtitle">
+                    A <strong>Lumi</strong> pode ser sua estrela guia que te mostra o caminho.
+                </p>
+                <p class="hero-description">
+                    O <em>Do 0 ao Tech</em> reúne carreiras, conteúdos, ferramentas e cursos para ajudar você a dar os primeiros passos. Descubra quais áreas combinam com seu perfil e comece sua jornada no seu próprio ritmo.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary">Fazer o Teste vocacional</button>
+                    <button class="btn-secondary">Explorar áreas</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/lumi-porta.png" alt="Lumi na porta de tecnologia">
+            </div>
+        </section>
+
+        <section class="lumi-card">
+            <div class="lumi-avatar">
+                <img src="assets/lumi-mascote.png" alt="Mascote Lumi">
+            </div>
+            <div class="lumi-text">
+                <h2>Oi! Eu sou a Lumi!</h2>
+                <p>Eu sei que entrar no mundo da tecnologia pode parecer um pouco confuso no começo. Tantas áreas, linguagens, cursos... por onde começar? 😅</p>
+                <p>É justamente para isso que eu estou aqui! Preparei um mapinha com os primeiros passos para te ajudar a encontrar um caminho, descobrir o que aprender e chegar até o seu primeiro projeto.</p>
+                <p class="lumi-highlight">Vem comigo? Eu te mostro o caminho.</p>
+            </div>
+        </section>
+
+        <section class="roadmap">
+            <div class="roadmap-header">
+                <h2>Entenda seu caminho conosco</h2>
+                <img src="assets/lumi-estrela-pequena.png" alt="Lumi estrela" class="icon-title">
+            </div>
+            <p class="roadmap-description">
+                Dar os primeiros passos na tecnologia pode parecer desafiador diante de tantas possibilidades, mas você não precisa caminhar no escuro. Desenhei um roteiro prático e estruturado para guiar você desde a descoberta inicial até a construção das suas primeiras experiências profissionais. Siga o mapa no seu próprio ritmo:
+            </p>
+
+            <div class="roadmap-list">
+                <div class="roadmap-item">
+                    <div class="number-badge">01</div>
+                    <div class="item-content">
+                        <h3>Descubra uma área que combina com você</h3>
+                        <p>Ainda está em dúvida? Faça o teste vocacional e encontre caminhos relacionados aos seus interesses.</p>
+                    </div>
+                </div>
+
+                <div class="roadmap-item">
+                    <div class="number-badge">02</div>
+                    <div class="item-content">
+                        <h3>Prefere explorar livremente? Conheça todas as áreas.</h3>
+                        <p>Conheça Desenvolvimento, Dados, Segurança e Inteligência Artificial e entenda o que cada área faz.</p>
+                    </div>
+                </div>
+
+                <div class="roadmap-item">
+                    <div class="number-badge">03</div>
+                    <div class="item-content">
+                        <h3>Conheça as possibilidades de carreira</h3>
+                        <p>Veja como é a rotina profissional, quais habilidades são importantes e onde cada caminho pode levar.</p>
+                    </div>
+                </div>
+
+                <div class="roadmap-item">
+                    <div class="number-badge">04</div>
+                    <div class="item-content">
+                        <h3>Encontre por onde começar a estudar</h3>
+                        <p>Compare cursos gratuitos e pagos selecionados para quem está começando.</p>
+                    </div>
+                </div>
+
+                <div class="roadmap-item">
+                    <div class="number-badge">05</div>
+                    <div class="item-content">
+                        <h3>Transforme conhecimento em experiência</h3>
+                        <p>Crie seu primeiro projeto, desenvolva suas habilidades e comece a construir seu portfólio.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Teste Vocacional -->
+        <section class="vocational-section">
+            <div class="vocational-header">
+                <div class="vocational-title-area">
+                    <h2>Qual área de tech <span class="highlight-cyan">combina com você?</span></h2>
+                    <p class="vocational-description">
+                        A tecnologia está cheia de oportunidades, mas você sente dúvida sobre qual caminho seguir? O nosso <strong>Teste Vocacional</strong> foi criado exatamente para te ajudar a dar esse passo com confiança, clareza e sem complicação.
+                    </p>
+                </div>
+                <div class="vocational-avatar">
+                    <img src="assets/lumi-mascote.png" alt="Mascote Lumi">
+                </div>
             </div>
 
-            <div>
-                <h4>Prefere explorar livremente? Conheça todas as áreas.</h4>
-                <p>Conheça Desenvolvimento, Dados, Segurança e Inteligência Artificial e entenda o que cada área faz.</p>
+            <p class="section-subtitle">Como funciona?</p>
+
+            <div class="steps-list">
+                <div class="step-item">
+                    <div class="number-badge-small">1</div>
+                    <div class="step-content">
+                        <h3>Responda</h3>
+                        <p>Escolha as alternativas que mais combinam com você.</p>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="number-badge-small">2</div>
+                    <div class="step-content">
+                        <h3>Descubra</h3>
+                        <p>Suas respostas serão analisadas para encontrar as áreas mais compatíveis com seu perfil.</p>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="number-badge-small">3</div>
+                    <div class="step-content">
+                        <h3>Explore</h3>
+                        <p>Conheça as áreas indicadas e descubra onde você pode começar sua jornada na tecnologia.</p>
+                    </div>
+                </div>
             </div>
 
-            <div>
-                <h4>Conheça as possibilidades de carreira</h4>
-                <p>Veja como é a rotina profissional, quais habilidades são importantes e onde cada caminho pode levar.</p>
+            <div class="center-btn-container">
+                <button class="btn-primary btn-large">Realizar teste vocacional</button>
             </div>
+        </section>
 
-            <div>
-                <h4>Encontre por onde começar a estudar</h4>
-                <p>Compare cursos gratuitos e pagos selecionados para quem está começando.</p>
-            </div>
+        <section class="areas-section">
+            <p class="section-subtitle">Prefere não fazer o teste vocacional?</p>
+            <h2>Explore as áreas e descubra as possibilidades no seu ritmo.</h2>
 
-            <div>
-                <h4>Transforme conhecimento em experiência</h4>
-                <p>Crie seu primeiro projeto, desenvolva suas habilidades e comece a construir seu portfólio.</p>
+            <div class="cards-grid">
+                <!-- Card 1: Desenvolvimento -->
+                <div class="area-card">
+                    <div class="card-header">
+                        <img src="assets/icon-dev.png" alt="Desenvolvimento de Software">
+                        <h3>Desenvolvimento de Software</h3>
+                    </div>
+                    <p>Crie sites, sistemas e aplicativos utilizando linguagens de programação, bancos de dados e tecnologias modernas para desenvolver soluções digitais inovadoras.</p>
+                    <button class="btn-primary btn-card">Realizar essa trilha</button>
+                </div>
+
+                <!-- Card 2: Dados -->
+                <div class="area-card">
+                    <div class="card-header">
+                        <img src="assets/icon-dados.png" alt="Área de Dados">
+                        <h3>Área de Dados</h3>
+                    </div>
+                    <p>Transforme grandes volumes de dados em informações estratégicas utilizando análise, estatística e programação para apoiar decisões inteligentes.</p>
+                    <button class="btn-primary btn-card">Realizar essa trilha</button>
+                </div>
+
+                <!-- Card 3: Segurança -->
+                <div class="area-card">
+                    <div class="card-header">
+                        <img src="assets/icon-seguranca.png" alt="Segurança da Informação">
+                        <h3>Segurança da Informação</h3>
+                    </div>
+                    <p>Proteja sistemas, redes e informações contra ataques cibernéticos, vazamentos de dados e acessos não autorizados por meio de boas práticas.</p>
+                    <button class="btn-primary btn-card">Realizar essa trilha</button>
+                </div>
+
+                <!-- Card 4: IA -->
+                <div class="area-card">
+                    <div class="card-header">
+                        <img src="assets/icon-ia.png" alt="Inteligência Artificial">
+                        <h3>Inteligência Artificial</h3>
+                    </div>
+                    <p>É uma tecnologia que permite máquinas simularem a inteligência humana, aprendendo com dados, reconhecendo padrões e tomando decisões de forma autônoma.</p>
+                    <button class="btn-primary btn-card">Realizar essa trilha</button>
+                </div>
             </div>
-        </div>
+        </section>
+
     </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Do 0 ao Tech. Todos os direitos reservados.</p>
+    </footer>
+
 </body>
 </html>
