@@ -53,7 +53,7 @@ const perguntasOriginais = [
             { texto: "Imagino uma forma de separar ou responder tudo automaticamente.", categoria: "D" },
             { texto: "Verifico o que pode ser compartilhado e o que deve ficar protegido.", categoria: "C" }
         ]
-    }, // <-- Vírgula adicionada aqui
+    },
     {
         pergunta: "Qual destas situações deixaria você mais satisfeito?",
         opcoes: [
@@ -62,7 +62,7 @@ const perguntasOriginais = [
             { texto: "Descobrir uma informação importante que ninguém havia percebido.", categoria: "B" },
             { texto: "Ver uma ideia se transformar em algo que realmente funciona.", categoria: "A" }
         ]
-    }, // <-- Vírgula adicionada aqui
+    },
     {
         pergunta: "Qual frase mais combina com você?",
         opcoes: [
@@ -77,9 +77,9 @@ const perguntasOriginais = [
 // 2. Resultados mapeados
 const paginasResultado = {
     A: "resultado_dev.html",
-    B: "resultado-dados.html",
-    C: "resultado-seguranca.html",
-    D: "resultado-ia.html"
+    B: "resultado_dados.html",
+    C: "resultado_seguranca.html",
+    D: "resultado_ia.html"
 };
 
 const opcoesDesempate = {
