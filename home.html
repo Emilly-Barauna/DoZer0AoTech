@@ -17,7 +17,7 @@
             <nav class="nav-menu">
                 <a href="home.html" class="active">Home</a>
                 <a href="testeVocacional.html">Teste Vocacional</a>
-                <a href="#">Carreiras</a>
+                <a href="carreiras.html">Carreiras</a>
                 <a href="#">Sobre Nós</a>
             </nav>
             <div class="accessibility-controls">
@@ -63,7 +63,6 @@
         <section class="roadmap">
             <div class="roadmap-header">
                 <h2>Entenda seu caminho conosco</h2>
-                <img src="assets/lumi-estrela-pequena.png" alt="Lumi estrela" class="icon-title">
             </div>
             <p class="roadmap-description">
                 Dar os primeiros passos na tecnologia pode parecer desafiador diante de tantas possibilidades, mas você não precisa caminhar no escuro. Desenhei um roteiro prático e estruturado para guiar você desde a descoberta inicial até a construção das suas primeiras experiências profissionais. Siga o mapa no seu próprio ritmo:
@@ -105,7 +104,9 @@
                     <div class="number-badge">05</div>
                     <div class="item-content">
                         <h3>Transforme conhecimento em experiência</h3>
-                        <p>Crie seu primeiro projeto, desenvolva suas habilidades e comece a construir seu portfólio.</p>
+                        <p>Crie seu primeiro projeto, desenvolva suas habilidades e comece a construir seu portfólio.
+                            <img src="imagens/Linha de chegada do mapinha.png" class="lumi-inline">
+                        </p>
                     </div>
                 </div>
             </div>
@@ -121,7 +122,6 @@
                     </p>
                 </div>
                 <div class="vocational-avatar">
-                    <img src="assets/lumi-mascote.png" alt="Mascote Lumi">
                 </div>
             </div>
 
@@ -163,13 +163,13 @@
 
             <div class="cards-grid">
                 <!-- Card 1: Desenvolvimento -->
-                <div class="area-card">
+<div class="area-card">
                     <div class="card-header">
                         <img src="imagens/Desenvolvimento de Software.png" alt="Desenvolvimento de Software">
                         <h3>Desenvolvimento de Software</h3>
                     </div>
                     <p>Crie sites, sistemas e aplicativos utilizando linguagens de programação, bancos de dados e tecnologias modernas para desenvolver soluções digitais inovadoras.</p>
-                    <button class="btn-primary btn-card">Realizar essa trilha</button>
+                    <a href="desenvolvimento.html" class="btn-primary btn-card" style="text-decoration: none; display: inline-block; text-align: center;">Realizar essa trilha</a>
                 </div>
 
                 <!-- Card 2: Dados -->
@@ -179,7 +179,7 @@
                         <h3>Área de Dados</h3>
                     </div>
                     <p>Transforme grandes volumes de dados em informações estratégicas utilizando análise, estatística e programação para apoiar decisões inteligentes.</p>
-                    <button class="btn-primary btn-card">Realizar essa trilha</button>
+                    <a href="curso_dados.html" class="btn-primary btn-card" style="text-decoration: none; display: inline-block; text-align: center;">Realizar essa trilha</a>
                 </div>
 
                 <!-- Card 3: Segurança -->
@@ -189,7 +189,7 @@
                         <h3>Segurança da Informação</h3>
                     </div>
                     <p>Proteja sistemas, redes e informações contra ataques cibernéticos, vazamentos de dados e acessos não autorizados por meio de boas práticas.</p>
-                    <button class="btn-primary btn-card">Realizar essa trilha</button>
+                    <a href="seguranca.html" class="btn-primary btn-card" style="text-decoration: none; display: inline-block; text-align: center;">Realizar essa trilha</a>
                 </div>
 
                 <!-- Card 4: IA -->
@@ -199,15 +199,37 @@
                         <h3>Inteligência Artificial</h3>
                     </div>
                     <p>É uma tecnologia que permite máquinas simularem a inteligência humana, aprendendo com dados, reconhecendo padrões e tomando decisões de forma autônoma.</p>
-                    <button class="btn-primary btn-card">Realizar essa trilha</button>
+                    <a href="ia.html" class="btn-primary btn-card" style="text-decoration: none; display: inline-block; text-align: center;">Realizar essa trilha</a>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <footer class="footer">
-        <p>&copy; 2026 Do 0 ao Tech. Todos os direitos reservados.</p>
+<!-- Rodapé Completo -->
+    <footer class="footer footer-dark">
+        <div class="footer-container">
+            
+            <!-- Links de Navegação -->
+            <div class="footer-nav">
+                <a href="home.html">Home</a>
+                <a href="testeVocacional.html">Teste Vocacional</a>
+                <a href="carreiras.html">Carreiras</a>
+                <a href="#">Sobre Nós</a>
+            </div>
+
+            <!-- Links Sociais (Cegos) -->
+            <div class="footer-social">
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                <a href="https://br.linkedin.com/" target="_blank">LinkedIn</a>
+            </div>
+
+            <!-- Direitos Autorais -->
+            <div class="footer-copyright">
+                <p>&copy; 2026 Do 0 ao Tech. Todos os direitos reservados.</p>
+            </div>
+            
+        </div>
     </footer>
     <script src="acessibilidade.js"></script>
 

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -9,26 +9,28 @@
 body {
     font-family: 'Inter', sans-serif;
     color: #333333;
-    background-color: #f5f5f5;
+    background-color: #ffffff;
     line-height: 1.5;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-h1,h2,h3 {
-    font-family: 'Fraunces', serif;
+/* Títulos agora usam Inter (sem serifa) */
+h1, h2, h3 {
+    font-family: 'Inter', sans-serif;
     color: #252525;
 }
 
 h1 {
     font-size: 36px;
-    font-weight: 600;
+    font-weight: 700;
+    letter-spacing: -0.02em;
 }
 
 h2 {
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 p {
@@ -61,10 +63,9 @@ p {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-family: 'Fraunces', serif;
+    font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 600;
-    font-style: italic;
     color: #ffffff;
 }
 
@@ -86,30 +87,6 @@ p {
 
 .nav-menu a:hover {
     color: #facc15;
-}
-
-.accessibility-controls {
-    display: flex;
-    gap: 5px;
-    margin-left: 25px;
-    padding-left: 20px;
-    border-left: 1px solid #ffffff;
-}
-
-.btn-access {
-    background-color: transparent;
-    color: #ffffff;
-    border: 1px solid #ffffff;
-    border-radius: 6px;
-    padding: 4px 8px;
-    font-size: 14px;
-    font-weight: 700;
-    cursor: pointer;
-}
-
-.btn-access:hover {
-    background-color: #facc15;
-    color: #01205f;
 }
 
 .areas-section {
@@ -194,64 +171,76 @@ p {
     min-width: 160px;
 }
 
+/* --- FOOTER COMPLETO --- */
 .footer {
     background-color: #01205f;
-    padding: 20px 0;
-    text-align: center;
-    margin-top: auto;
-}
-
-.footer p {
+    padding: 40px 0 20px 0;
     color: #ffffff;
-    font-size: 16px;
+    text-align: center;
+}
+
+.footer-dark {
+    background-color: #002b66; 
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
     font-weight: 600;
+    transition: color 0.2s ease;
 }
 
-@media (max-width: 768px) {
-    .header-container {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .nav-menu {
-        gap: 20px;
-    }
-
-    .accessibility-controls {
-        margin-left: 0;
-        padding-left: 0;
-        border-left: none;
-    }
-
-    .cards-grid {
-        width: 100%;
-    }
-
-    .areas-section h1 {
-        font-size: 32px;
-    }
-
-    .card-header img {
-        width: 120px;
-    }
-
-    .area-content h2 {
-        font-size: 26px;
-    }
+.footer-nav a:hover {
+    color: #26c6da;
 }
 
-@media (max-width: 768px) {
-    .cards-grid {
-        grid-template-columns: 1fr;
-    }
+.footer-social {
+    display: flex;
+    gap: 15px;
 }
 
-.resultado-title,
-.quiz-question-title,
-.page-header h1 {
+.footer-social a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85rem;
     font-weight: 700;
-    letter-spacing: -0.02em;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 8px 20px;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+
+.footer-social a:hover {
+    background-color: #facc15;
+    color: #0f172a;
+    border-color: #facc15;
+}
+
+.footer-copyright {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 25px;
+    width: 100%;
 }
 
 /* --- CONTROLES DE ACESSIBILIDADE --- */
@@ -281,4 +270,45 @@ p {
     background-color: #facc15;
     color: #0f172a !important;
     border-color: #facc15;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+    .header-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nav-menu {
+        gap: 20px;
+    }
+
+    .accessibility-controls {
+        margin-left: 0;
+        padding-left: 0;
+        border-left: none;
+    }
+
+    .cards-grid {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .areas-section h1 {
+        font-size: 32px;
+    }
+
+    .card-header img {
+        width: 120px;
+    }
+
+    .area-content h2 {
+        font-size: 26px;
+    }
+    
+    .footer-nav {
+        gap: 15px;
+        flex-direction: column;
+    }
 }

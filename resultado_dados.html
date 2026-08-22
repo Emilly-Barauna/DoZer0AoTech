@@ -18,13 +18,13 @@
             <nav class="nav-menu">
                 <a href="home.html" class="nav-light">Home</a>
                 <a href="testeVocacional.html" class="active nav-light">Teste Vocacional</a>
-                <a href="#" class="nav-light">Carreiras</a>
+                <a href="carreiras.html" class="nav-light">Carreiras</a>
                 <a href="#" class="nav-light">Sobre</a>
             </nav>
             <div class="accessibility-controls">
-            <button class="btn-access" onclick="alterarTamanhoFonte(-1)" title="Diminuir fonte">A-</button>
-            <button class="btn-access" onclick="alterarTamanhoFonte(1)" title="Aumentar fonte">A+</button>
-        </div>
+                <button class="btn-access" onclick="alterarTamanhoFonte(-1)" title="Diminuir fonte">A-</button>
+                <button class="btn-access" onclick="alterarTamanhoFonte(1)" title="Aumentar fonte">A+</button>
+            </div>
         </div>
     </header>
 
@@ -36,19 +36,47 @@
                 <img src="imagens/Dados.png" alt="Área de Dados">
                 <div class="card-info">
                     <h2>Área de Dados</h2>
-                    <p>Transfore grande volumes de dados em informações estratégicas utilizando análise, estatística e programação para apoiar decisões inteligentes.</p>
-                    <a href="#" class="btn-trilha">Realizar essa trilha</a>
+                    <p>Transforme grandes volumes de dados em informações estratégicas utilizando análise, estatística e programação para apoiar decisões inteligentes.</p>
+                    
+                    <!-- BLOCO DOS BOTÕES ATUALIZADO -->
+                    <div class="resultado-botoes">
+                        <a href="curso_dados.html" class="btn-trilha">Realizar essa trilha</a>
+                        <a href="carreiras.html" class="btn-trilha-secundario">Explorar trilhas</a>
+                    </div>
+                    
                 </div>
             </div>
 
             <p class="resultado-descricao">
-                Você gosta de criar soluções, transformar ideias em ferramentas e entender como as coisas funcionam. Seu perfil combina com quem gosta de construir sites, aplicativos e sistemas que podem ser usados no dia a dia.
+                Você gosta de organizar informações, encontrar padrões e transformar dados em descobertas. Seu perfil demonstra curiosidade para entender o que os números e informações estão tentando mostrar.
             </p>
         </div>
     </main>
 
+    <!-- Rodapé Completo -->
     <footer class="footer footer-dark">
-        <p>&copy; 2026 Do 0 ao Tech. Todos os direitos reservados.</p>
+        <div class="footer-container">
+            
+            <!-- Links de Navegação -->
+            <div class="footer-nav">
+                <a href="home.html">Home</a>
+                <a href="testeVocacional.html">Teste Vocacional</a>
+                <a href="carreiras.html">Carreiras</a>
+                <a href="#">Sobre Nós</a>
+            </div>
+
+            <!-- Links Sociais (Cegos) -->
+            <div class="footer-social">
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                <a href="https://br.linkedin.com/" target="_blank">LinkedIn</a>
+            </div>
+
+            <!-- Direitos Autorais -->
+            <div class="footer-copyright">
+                <p>&copy; 2026 Do 0 ao Tech. Todos os direitos reservados.</p>
+            </div>
+            
+        </div>
     </footer>
     <script src="acessibilidade.js"></script>
 
