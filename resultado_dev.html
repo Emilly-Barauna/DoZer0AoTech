@@ -18,13 +18,13 @@
             <nav class="nav-menu">
                 <a href="home.html" class="nav-light">Home</a>
                 <a href="testeVocacional.html" class="active nav-light">Teste Vocacional</a>
-                <a href="#" class="nav-light">Carreiras</a>
+                <a href="carreiras.html" class="nav-light">Carreiras</a>
                 <a href="#" class="nav-light">Sobre</a>
             </nav>
             <div class="accessibility-controls">
-            <button class="btn-access" onclick="alterarTamanhoFonte(-1)" title="Diminuir fonte">A-</button>
-            <button class="btn-access" onclick="alterarTamanhoFonte(1)" title="Aumentar fonte">A+</button>
-        </div>
+                <button class="btn-access" onclick="alterarTamanhoFonte(-1)" title="Diminuir fonte">A-</button>
+                <button class="btn-access" onclick="alterarTamanhoFonte(1)" title="Aumentar fonte">A+</button>
+            </div>
         </div>
     </header>
 
@@ -37,7 +37,13 @@
                 <div class="card-info">
                     <h2>Desenvolvimento de Software</h2>
                     <p>Crie sites, sistemas e aplicativos utilizando linguagens de programação, bancos de dados e tecnologias modernas para desenvolver soluções digitais inovadoras.</p>
-                    <a href="#" class="btn-trilha">Realizar essa trilha</a>
+                    
+                    <!-- BLOCO DOS BOTÕES ATUALIZADO -->
+                    <div class="resultado-botoes">
+                        <a href="desenvolvimento.html" class="btn-trilha">Realizar essa trilha</a>
+                        <a href="carreiras.html" class="btn-trilha-secundario">Explorar trilhas</a>
+                    </div>
+                    
                 </div>
             </div>
 
@@ -47,8 +53,30 @@
         </div>
     </main>
 
+    <!-- Rodapé Completo -->
     <footer class="footer footer-dark">
-        <p>&copy; 2026 Do 0 ao Tech. Todos os direitos reservados.</p>
+        <div class="footer-container">
+            
+            <!-- Links de Navegação -->
+            <div class="footer-nav">
+                <a href="home.html">Home</a>
+                <a href="testeVocacional.html">Teste Vocacional</a>
+                <a href="carreiras.html">Carreiras</a>
+                <a href="#">Sobre Nós</a>
+            </div>
+
+            <!-- Links Sociais (Cegos) -->
+            <div class="footer-social">
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                <a href="https://br.linkedin.com/" target="_blank">LinkedIn</a>
+            </div>
+
+            <!-- Direitos Autorais -->
+            <div class="footer-copyright">
+                <p>&copy; 2026 Do 0 ao Tech. Todos os direitos reservados.</p>
+            </div>
+            
+        </div>
     </footer>
     <script src="acessibilidade.js"></script>
 

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste Vocacional - Do Zer0 ao Tech</title>
+    <title>Resultado - Segurança da Informação</title>
     <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="resultado.css">
 </head>
 <body>
 
@@ -22,45 +22,38 @@
                 <a href="#" class="nav-light">Sobre</a>
             </nav>
             <div class="accessibility-controls">
-            <button class="btn-access" onclick="alterarTamanhoFonte(-1)" title="Diminuir fonte">A-</button>
-            <button class="btn-access" onclick="alterarTamanhoFonte(1)" title="Aumentar fonte">A+</button>
-        </div>
+                <button class="btn-access" onclick="alterarTamanhoFonte(-1)" title="Diminuir fonte">A-</button>
+                <button class="btn-access" onclick="alterarTamanhoFonte(1)" title="Aumentar fonte">A+</button>
+            </div>
         </div>
     </header>
 
     <main class="main-container">
-        <div class="quiz-wrapper">
-            <!-- Container do Quiz -->
-            <div id="quiz-container">
-                <div class="progress-header">
-                    <span id="progresso-texto">Pergunta 1 de 8</span>
-                    <span id="porcentagem-texto">12.5%</span>
-                </div>
-                <div class="progress-bar-bg">
-                    <div id="progress-bar-fill" class="progress-bar-fill"></div>
-                </div>
+        <div class="resultado-wrapper">
+            <h1 class="resultado-title">A área que mais combina com você é:</h1>
 
-                <h2 id="pergunta" class="quiz-question-title">Carregando pergunta...</h2>
+            <div class="resultado-card">
+                <img src="imagens/Segurança da Informação.png" alt="Segurança da Informação">
+                <div class="card-info">
+                    <h2>Segurança da Informação</h2>
+                    <p>Proteja sistemas, redes e informações contra ataques cibernéticos, vazamentos de dados e acessos não autorizados por meio de boas práticas.</p>
+                    
+                    <!-- BLOCO DOS BOTÕES ATUALIZADO -->
+                    <div class="resultado-botoes">
+                        <a href="seguranca.html" class="btn-trilha">Realizar essa trilha</a>
+                        <a href="carreiras.html" class="btn-trilha-secundario">Explorar trilhas</a>
+                    </div>
 
-                <div id="opcoes" class="quiz-options-container"></div>
-
-                <div class="quiz-action-container">
-                    <button id="btn-proxima" class="btn-primary" onclick="confirmarAvanco()" disabled>Próxima pergunta</button>
                 </div>
             </div>
 
-            <!-- Container do Resultado -->
-            <div id="resultado-container" class="escondido">
-                <h2>Resultado do seu Teste Vocacional</h2>
-                <p id="resultado-texto" class="resultado-destaque"></p>
-                <div class="center-btn-container">
-                    <button class="btn-primary" onclick="reiniciarQuiz()">Refazer Teste</button>
-                </div>
-            </div>
+            <p class="resultado-descricao">
+                Você gosta de identificar riscos, investigar situações e encontrar formas de proteger pessoas e informações. Seu perfil combina com quem presta atenção aos detalhes e pensa em como evitar problemas antes que eles aconteçam.
+            </p>
         </div>
     </main>
 
-<!-- Rodapé Completo -->
+    <!-- Rodapé Completo -->
     <footer class="footer footer-dark">
         <div class="footer-container">
             
@@ -85,8 +78,7 @@
             
         </div>
     </footer>
-
-    <script src="quiz.js"></script>
     <script src="acessibilidade.js"></script>
+
 </body>
 </html>

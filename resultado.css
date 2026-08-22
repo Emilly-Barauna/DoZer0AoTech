@@ -77,3 +77,31 @@
     max-width: 750px;
     margin: 0 auto;
 }
+
+/* --- CONTAINER DOS DOIS BOTÕES --- */
+.resultado-botoes {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* --- BOTÃO SECUNDÁRIO (Explorar Trilhas) --- */
+.btn-trilha-secundario {
+    background-color: #e0f2fe;
+    color: #0f172a;
+    border: 1px solid #7dd3fc;
+    padding: 10px 24px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-trilha-secundario:hover {
+    transform: translateY(-2px);
+    background-color: #bae6fd;
+}

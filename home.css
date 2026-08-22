@@ -240,13 +240,87 @@ h1, h2, h3 {
     color: #64748b;
 }
 
+/* --- FOOTER COMPLETO --- */
 .footer {
     background-color: #01205f;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 0.85rem;
-    font-weight: 600;
+    padding: 40px 0 20px 0;
     color: #ffffff;
+    text-align: center;
+}
+
+.footer-dark {
+    background-color: #002b66; 
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Menu de Navegação no Rodapé */
+.footer-nav {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.footer-nav a:hover {
+    color: #26c6da; /* Fica ciano ao passar o mouse */
+}
+
+/* Redes Sociais */
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 700;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 8px 20px;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+
+.footer-social a:hover {
+    background-color: #facc15;
+    color: #0f172a;
+    border-color: #facc15;
+}
+
+/* Copyright */
+.footer-copyright {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Linha divisória bem suave */
+    padding-top: 25px;
+    width: 100%;
+}
+
+/* Responsividade do Rodapé */
+@media (max-width: 768px) {
+    .footer-nav {
+        gap: 15px;
+        flex-direction: column;
+    }
 }
 
 .vocational-section {
@@ -494,4 +568,13 @@ h1, h2, h3 {
     background-color: #facc15;
     color: #0f172a !important;
     border-color: #facc15;
+}
+
+/* --- IMAGEM INLINE DA LUMI (TÓPICO 05) --- */
+.lumi-inline {
+    width: 80px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 6px;
+    margin-bottom: 3px;
 }
