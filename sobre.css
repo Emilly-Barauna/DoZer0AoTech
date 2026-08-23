@@ -1,0 +1,177 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    font-family: calibri;
+}
+
+
+main{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px 60px 20px;
+
+}
+#section1{
+    position: relative;
+    width: 95%;
+    margin: auto;
+}
+h1{
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+#section1 p{
+    margin-bottom: 10px;
+    font-size: 18px;}
+    
+#section2 {
+    width: 85%;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: calibri;
+    
+}
+#coluna-esquerda{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+#quadrado1, #quadrado2{
+    position: relative;
+    width: 100%;
+    height: 230px;
+    background-color: rgba(253, 199, 0, 0.25);
+    border-radius: 20px;
+    border: 1px solid #FDC700;
+    padding: 15px;
+   
+}
+#quadrado2{
+    margin-top: 20px;
+}
+
+#quadrado3{
+    position: relative;
+    width: 50%;
+    height: 480px;
+    background-color: rgba(253, 199, 0, 0.25);
+    border-radius: 20px;
+    border: 1px solid #FDC700;
+    padding: 15px;
+    
+    
+}
+#section2 p{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#quadrado3 p {
+    margin-bottom: 20px;
+}
+#section3 h2{
+    margin-top:50px;
+    font-size: 40px;
+   
+
+}
+#quadrado4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    
+   
+}
+#section3 img{
+    position: relative;
+    width: 20%;
+    height: 300px;
+    margin-top: 20px;
+}
+#quadrado5, #quadrado6{
+    position: relative;
+    width: 35%;
+    height: 290px;
+    background-color: rgba(253, 199, 0, 0.25);
+    border: 1px solid #FDC700;
+    border-radius: 20px;
+
+    padding: 15px;
+    text-align: center;
+}
+#section3 h3, p{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 15px;
+    text-align: justify;
+    
+}
+#section3 p{
+    font-size: 18px;
+
+}
+#section4 h2, p{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 15px;
+    text-align: justify;}
+
+#section4{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 60px;
+    margin-top: 70px;
+}
+#section4 h2{
+    font-size: 30px;
+
+}
+#quadrado8{
+    position: relative;
+    width: 35%;
+}
+
+
+#quadrado8{
+    position: relative;
+    width: 40%;
+}
+
+
+#listaequipe p{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+#quadrado7{
+    width: 500px;
+    height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+#quadrado7 img{
+   
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50%;
+    display: block;
+}
+
+#listaequipe{
+    margin-top: 15px;
+}
+
+#listaequipe p{
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-align: left;
+}
