@@ -94,7 +94,7 @@ h1, h2, h3 {
 .hero-subtitle {
     font-size: 1.1rem;
     margin-bottom: 12px;
-    color: #475569;
+    color: #0f172a;
 }
 
 .hero-subtitle strong {
@@ -103,7 +103,7 @@ h1, h2, h3 {
 
 .hero-description {
     font-size: 0.85rem;
-    color: #64748b;
+    color: #0f172a;
     margin-bottom: 24px;
     max-width: 480px;
 }
@@ -137,7 +137,7 @@ h1, h2, h3 {
     font-weight: 500;
     cursor: pointer;
     font-size: 0.85rem;
-    color: #334155;
+    color: #0f172a;
 }
 
 .hero-image {
@@ -173,7 +173,7 @@ h1, h2, h3 {
 
 .lumi-text p {
     font-size: 0.85rem;
-    color: #334155;
+    color: #0f172a;
     margin-bottom: 10px;
 }
 
@@ -199,7 +199,7 @@ h1, h2, h3 {
 
 .roadmap-description {
     font-size: 0.85rem;
-    color: #64748b;
+    color: #0f172a;
     margin-bottom: 35px;
     max-width: 850px;
 }
@@ -237,7 +237,7 @@ h1, h2, h3 {
 
 .item-content p {
     font-size: 0.82rem;
-    color: #64748b;
+    color: #0f172a;
 }
 
 /* --- FOOTER COMPLETO --- */
@@ -345,7 +345,7 @@ h1, h2, h3 {
 
 .vocational-description {
     font-size: 0.85rem;
-    color: #64748b;
+    color: #0f172a;
     max-width: 700px;
 }
 
@@ -394,7 +394,7 @@ h1, h2, h3 {
 
 .step-content p {
     font-size: 0.8rem;
-    color: #64748b;
+    color: #0f172a;
 }
 
 .center-btn-container {
@@ -452,7 +452,7 @@ h1, h2, h3 {
 
 .area-card p {
     font-size: 0.82rem;
-    color: #475569;
+    color: #0f172a;
     margin-bottom: 20px;
     text-align: left;
     line-height: 1.4;
@@ -503,7 +503,7 @@ h1, h2, h3 {
 
 .page-description {
     font-size: 0.88rem;
-    color: #475569;
+    color: #0f172a;
     line-height: 1.6;
 }
 
