@@ -3,30 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Área de Cybersecurity - Do Zer0 ao Tech</title>
-    <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="curso_de_Cybersegurity.css">
+    <title>Desenvolvimento de Software - Do Zer0 ao Tech</title>
+    <link rel="stylesheet" href="../home.css">
+    <link rel="stylesheet" href="../css/curso_dados.css">
+    <link rel="stylesheet" href="../css/acessibilidade.css">
 </head>
 <body>
 
-    <!-- Header Escuro -->
     <header class="header header-dark">
         <div class="header-container">
             <div class="logo">
-                <img src="imagens/LUMI LOGO.png" alt="Lumi logo">
+                <img src="../imagens/LUMI LOGO.png" alt="Lumi logo">
                 <span class="logo-text-light">DoZeroAoTech</span>
             </div>
             <nav class="nav-menu">
-                <a href="home.html" class="nav-light">Home</a>
+                <a href="../home.html" class="nav-light">Home</a>
                 <a href="testeVocacional.html" class="nav-light">Teste Vocacional</a>
                 <a href="carreiras.html" class="active nav-light">Carreiras</a>
-                <a href="#" class="nav-light">Sobre</a>
+                <a href="sobre.html" class="nav-light">Sobre Nós</a>
             </nav>
-            <div class="accessibility-controls">
-                <button class="btn-access" onclick="alterarTamanhoFonte(-1)" title="Diminuir fonte">A-</button>
-                <button class="btn-access" onclick="alterarTamanhoFonte(1)" title="Aumentar fonte">A+</button>
-            </div>
+            
+        <button class="botao-acessibilidade" id="botaoAcessibilidade" aria-label="Abrir opções de acessibilidade" aria-expanded="false">
+    ♿
+    </button>
+
+    <div class="menu-acessibilidade" id="menuAcessibilidade" aria-hidden="true">
+        <div class="cabecalho-acessibilidade">
+            <h2>Acessibilidade</h2>
+            <button id="fecharAcessibilidade" aria-label="Fechar menu">×</button>
         </div>
+
+        <div class="opcoes-acessibilidade">
+
+            <button class="opcao-acessibilidade" id="aumentarTexto">
+                <span>🔠</span>
+                <div>
+                    <strong>Aumentar texto</strong>
+                    <small>Aumentar o tamanho da fonte</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="diminuirTexto">
+                <span>🔡</span>
+                <div>
+                    <strong>Diminuir texto</strong>
+                    <small>Diminuir o tamanho da fonte</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="lerAoPassar">
+                <span>🖱️</span>
+                <div>
+                    <strong>Ler ao passar o mouse</strong>
+                    <small>Ouvir o conteúdo ao posicionar o cursor</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="altoContraste">
+                <span>◐</span>
+                <div>
+                    <strong>Alto contraste</strong>
+                    <small>Aumentar o contraste das cores</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="contrasteNegativo">
+                <span>◑</span>
+                <div>
+                    <strong>Contraste negativo</strong>
+                    <small>Inverter as cores da página</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="destacarLinks">
+                <span>🔗</span>
+                <div>
+                    <strong>Destacar links</strong>
+                    <small>Facilitar a identificação dos links</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade restaurar" id="restaurarAcessibilidade">
+                <span>↩️</span>
+                <div>
+                    <strong>Restaurar padrão</strong>
+                    <small>Voltar às configurações originais</small>
+                </div>
+            </button>
+
+        </div>
+    </div>
+            
     </header>
 
     <main class="main-container">
@@ -34,12 +101,12 @@
             
             <!-- Hero Section -->
             <section class="dados-hero">
-                <img src="../Lumi/Lumi - Segurança.png" alt="Mascote Lumi Cybercurity">
-                <h1>Área de Cybersecurity</h1>
+                <img src="../imagens/Lumi - Software.png" alt="Mascote Lumi Área de Desenvolvimento">
+                <h1>Desenvolvimento de Software</h1>
             </section>
 
             <p class="dados-text-block">
-                Trabalhar com cibersegurança é transformar vulnerabilidades em proteção para garantir a segurança de dados e sistemas. A área reúne diferentes caminhos, como segurança de redes, análise de ameaças, teste de invasão (pentest) e resposta a incidentes. O objetivo é antecipar riscos e defender as organizações em um mundo cada vez mais conectado.
+                Desenvolvimento de software é usar código para criar soluções como sites, aplicativos e sistemas. Existem diferentes caminhos na área, desde o que aparece na tela até dados, segurança e funcionamento interno.
             </p>
 
             <!-- Seção 1: O que você pode fazer -->
@@ -47,16 +114,16 @@
                 <h2 class="section-title">O que você pode fazer nessa área?</h2>
                 <div class="cards-trilha">
                     <div class="trilha-card">
-                        <h3>Prevenir</h3>
-                        <p>Encontrar falhas em sistemas e aplicar defesas antes que hackers possam explorá-las.</p>
+                        <h3>Criar</h3>
+                        <p>Transformar ideias em sites, aplicativos e sistemas que as pessoas possam usar.</p>
                     </div>
                     <div class="trilha-card">
-                        <h3>Identificar</h3>
-                        <p>Analisar riscos, ameaças e padrões maliciosos para entender a origem e o impacto de um ataque.</p>
+                        <h3>Programar</h3>
+                        <p>Escrever códigos e construir as funcionalidades que fazem um software funcionar.</p>
                     </div>
                     <div class="trilha-card">
                         <h3>Resolver</h3>
-                        <p>Parar ataques em andamento, corrigir brechas de segurança e implementar melhorias de proteção.</p>
+                        <p>Encontrar problemas no código, corrigir erros e melhorar aplicações existentes.</p>
                     </div>
                 </div>
             </section>
@@ -65,49 +132,49 @@
             <section class="dados-section">
                 <h2 class="section-title">Por onde começar?</h2>
                 <p class="dados-text-block">
-                    Não tente aprender tudo de uma vez! Comece entendendo como as redes e os sistemas funcionam e escolha uma área para praticar. O importante agora é construir uma boa base e aprender a proteger dados e identificar ameaças.
+                    Não tente aprender várias linguagens de uma vez! Comece entendendo a lógica e escolha uma linguagem para praticar. O importante agora é construir uma boa base.
                 </p>
                 <div class="passos-lista">
                     <div class="passo-item">
                         <div class="passo-numero">01</div>
                         <div class="passo-texto">
-                            <h4>Redes e Sistemas Operacionais</h4>
-                            <p>Entenda como a internet funciona, protocolos de comunicação (TCP/IP, DNS) e aprenda a usar Linux e Windows pelo terminal.</p>
+                            <h4>Lógica de programação</h4>
+                            <p>Aprenda a pensar passo a passo e resolver problemas com código.</p>
                         </div>
                     </div>
                     <div class="passo-item">
                         <div class="passo-numero">02</div>
                         <div class="passo-texto">
-                            <h4>Lógica e Programação</h4>
-                            <p>Aprenda a pensar de forma estruturada. Uma linguagem como Python ajuda muito a criar pequenos scripts e automatizar tarefas.</p>
+                            <h4>HTML + CSS</h4>
+                            <p>Comece criando páginas e entendendo como as interfaces são estruturadas.</p>
                         </div>
                     </div>
                     <div class="passo-item">
                         <div class="passo-numero">03</div>
                         <div class="passo-texto">
-                            <h4>Fundamentos de Segurança</h4>
-                            <p>Conheça os conceitos básicos: confidencialidade, integridade, disponibilidade e como funcionam as principais vulnerabilidades (OWASP).</p>
+                            <h4>JavaScript</h4>
+                            <p>Dê vida às páginas e aprenda sua primeira linguagem de programação.</p>
                         </div>
                     </div>
                     <div class="passo-item">
                         <div class="passo-numero">04</div>
                         <div class="passo-texto">
-                            <h4>Análise de Tráfego</h4>
-                            <p>Use ferramentas como o Wireshark para capturar, analisar e entender como os dados viajam pela rede.</p>
+                            <h4>Git + GitHub</h4>
+                            <p>Aprenda a salvar versões do seu código e compartilhar seus projetos.</p>
                         </div>
                     </div>
                     <div class="passo-item">
                         <div class="passo-numero">05</div>
                         <div class="passo-texto">
-                            <h4>Ferramentas e Defesa</h4>
-                            <p>Aprenda a configurar firewalls, entender varreduras de rede (Nmap) e utilizar plataformas básicas de defesa (SIEM).</p>
+                            <h4>Banco de Dados</h4>
+                            <p>Aprenda como os sistemas guardam, organizam e encontram informações.</p>
                         </div>
                     </div>
                     <div class="passo-item">
                         <div class="passo-numero">06</div>
                         <div class="passo-texto">
-                            <h4>Projetos Práticos</h4>
-                            <p>Crie laboratórios virtuais (máquinas virtuais) ou use plataformas como TryHackMe para praticar defesa e ataque em ambientes seguros e legais.</p>
+                            <h4>Projetos</h4>
+                            <p>Coloque tudo em prática criando seus primeiros projetos para o portfólio.</p>
                         </div>
                     </div>
                 </div>
@@ -123,67 +190,67 @@
                     <span>Carreira avançada</span>
                 </div>
 
-                <!-- Analista -->
+                <!-- Dev Front-end -->
                 <div class="career-row row-yellow">
                     <div class="career-cell">
-                        <h4>Analista de Segurança Júnior</h4>
-                        <p>Monitora alertas do sistema, verifica acessos de usuários e auxilia na aplicação de regras de segurança.</p>
+                        <h4>Dev Front-end Júnior</h4>
+                        <p>Cria interfaces e páginas que os usuários utilizam.</p>
                     </div>
                     <div class="career-cell">
-                        <h4>Analista de Segurança Pleno</h4>
-                        <p>Implementa controles de proteção, gerencia ferramentas de defesa e investiga incidentes em sistemas e redes.</p>
+                        <h4>Dev Front-end Pleno</h4>
+                        <p>Desenvolve interfaces mais complexas e experiências interativas.</p>
                     </div>
                     <div class="career-cell">
-                        <h4>Analista de Segurança Sênior</h4>
-                        <p>Lidera a estratégia de proteção e gerencia a resposta a ataques graves.</p>
+                        <h4>Dev Front-end Sênior</h4>
+                        <p>Define soluções avançadas de interface, arquitetura e experiência.</p>
                     </div>
                 </div>
 
-                <!-- Engenheiro -->
+                <!-- Dev Back-end -->
                 <div class="career-row row-blue">
                     <div class="career-cell">
-                        <h4>Engenheiro de Segurança Júnior</h4>
-                        <p>Configura firewalls simples, instala antivírus e faz atualizações.</p>
+                        <h4>Dev Back-end Júnior</h4>
+                        <p>Desenvolve APIs, regras de negócio e integrações.</p>
                     </div>
                     <div class="career-cell">
-                        <h4>Engenheiro de Segurança Pleno</h4>
-                        <p>Automatiza defesas e garante a segurança em sistemas e nuvem.</p>
+                        <h4>Dev Back-end Pleno</h4>
+                        <p>Desenvolve sistemas, APIs e integrações mais robustas.</p>
                     </div>
                     <div class="career-cell">
-                        <h4>Engenheiro de Segurança Sênior</h4>
-                        <p>Projeta arquiteturas de segurança complexas para toda a empresa.</p>
+                        <h4>Dev Back-end Sênior</h4>
+                        <p>Projeta sistemas escaláveis, seguros e de alta performance.</p>
                     </div>
                 </div>
 
-                <!-- Analista SOC (Defesa) -->
+                <!-- Dev Mobile -->
                 <div class="career-row row-yellow">
                     <div class="career-cell">
-                        <h4>Analista SOC(Defesa) Júnior</h4>
-                        <p>Acompanha o tráfego da rede e faz a triagem inicial de alertas.</p>
+                        <h4>Dev Mobile Júnior</h4>
+                        <p>Cria aplicativos para celulares e dispositivos móveis.</p>
                     </div>
                     <div class="career-cell">
-                        <h4>Analista SOC(Defesa) Pleno</h4>
-                        <p>Investiga a origem de invasões e bloqueia ameaças em andamento.</p>
+                        <h4>Dev Mobile Pleno</h4>
+                        <p>Cria aplicativos completos e soluções móveis mais avançadas.</p>
                     </div>
                     <div class="career-cell">
-                        <h4>Analista SOC(Defesa) Sênior</h4>
-                        <p>Conpensa ataques avançados, faz perícia digital e caça invasores.</p>
+                        <h4>Dev Mobile Sênior</h4>
+                        <p>Lidera o desenvolvimento de aplicativos complexos e escaláveis.</p>
                     </div>
                 </div>
 
-                <!-- BI -->
+                <!-- Dev Full Stack -->
                 <div class="career-row row-blue">
                     <div class="career-cell">
-                        <h4>Pentester Júnior</h4>
-                        <p>Executa varreduras simples para achar falhas conhecidas de sistema.</p>
+                        <h4>Dev Full Stack Júnior</h4>
+                        <p>Trabalha tanto com a interface quanto com o back-end.</p>
                     </div>
                     <div class="career-cell">
-                        <h4>Pentester Pleno</h4>
-                        <p>Realiza testes de invasão manuais e relata soluções para as brechas.</p>
+                        <h4>Dev Full Stack Pleno</h4>
+                        <p>Atua em toda a aplicação, do front-end ao back-end.</p>
                     </div>
                     <div class="career-cell">
-                        <h4>Pentester Sênior</h4>
-                        <p>Simula ataques virtuais complexos para testar as defesas da empresa.</p>
+                        <h4>Dev Full Stack Sênior</h4>
+                        <p>Domina toda a aplicação e participa de decisões de arquitetura.</p>
                     </div>
                 </div>
             </section>
@@ -192,7 +259,8 @@
             <section class="dados-section">
                 <h2 class="section-title">Qual a média salarial?</h2>
                 <p class="dados-text-block" style="font-size: 0.9rem; margin-bottom: 30px;">
-                    Valores aproximados para o mercado brasileiro em 2026. Podem variar conforme experiência, localização, empresa, especialização e modelo de contratação.
+                    Valores aproximados para o mercado brasileiro em 2026. Podem variar conforme experiência, localização, empresa, especialização e modelo de contratação. 
+                    <a href="https://www.glassdoor.com.br/index.htm" target="_blank" class="link-inline" style="color: #26c6da; text-decoration: underline; margin-left: 5px;">Ver fonte da pesquisa</a>
                 </p>
 
                 <div class="salary-list">
@@ -214,12 +282,12 @@
                     <div class="salary-item">
                         <span class="salary-level">Sênior</span>
                         <div class="salary-bar-bg"><div class="salary-bar-fill" style="width: 80%;"></div></div>
-                        <span class="salary-value">R$ 10.000 - 20.000</span>
+                        <span class="salary-value">R$ 12.000 - 22.000</span>
                     </div>
                     <div class="salary-item">
                         <span class="salary-level">Tech Lead</span>
                         <div class="salary-bar-bg"><div class="salary-bar-fill" style="width: 100%;"></div></div>
-                        <span class="salary-value">R$ 18.000 - 30.000</span>
+                        <span class="salary-value">R$ 20.000 - 35.000</span>
                     </div>
                 </div>
             </section>
@@ -228,35 +296,23 @@
             <section class="dados-section">
                 <h2 class="section-title">Conheça a rotina real</h2>
                 <p class="dados-text-block" style="font-size: 0.9rem; margin-bottom: 30px;">
-                    Assista ao vídeo preparado por um profissional de Cibersegurança e descubra em detalhes como funciona a rotina de quem protege dados e combate ameaças virtuais!
+                    Assista ao vídeo preparado por um profissional da área de Desenvolvimento e acompanhe de perto como é a dinâmica do dia a dia na criação de softwares.
                 </p>
 
                 <div class="video-card">
                     
                     <!-- Link do video -->
-                    <iframe 
-                    width="560" 
-                    height="315" 
-                    src="https://www.youtube.com/embed/H2-fEbypIy8?si=8Mp2zrzHldujdXAw" 
-                    title="YouTube video player" 
-                     frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;    web-share" 
-                    referrerpolicy="strict-origin-when-cross-origin" 
-                    allowfullscreen>
-               </iframe>
-
-             <div class="video-info">
-                <h3>Como Ser um Profissional de Segurança da Informação?</h3>
-                <a href="https://youtu.be/H2-fEbypIy8?si=8Mp2zrzHldujdXAw" target="_blank" class="link-inline">Código Fonte TV</a>
-            </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nOz8oW0hNRU?si=SADHYxt3ykgYOLHL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    
+                    <div class="video-info">
+                        <h3>Minha Rotina REAL como Engenheira de Software</h3>
+                        <a href="https://www.youtube.com/channel/UC5zu0F3DdcNyFAWYTb4SYPQ" target="_blank" class="link-inline">Caio Andres</a>
                     </div>
-                
+                </div>
             </section>
 
             <!-- Seção 6: Onde Estudar -->
             <section class="dados-section">
                 <h2 class="section-title">Onde estudar?</h2>
-            
                 
                 <!-- Botões de Troca -->
                 <div class="course-tabs">
@@ -268,68 +324,68 @@
                 <div id="lista-gratuitos" class="course-content">
                     
                     <div class="course-category">
-                        <h3>Iniciante: Fundamentos de Cibersegurança</h3>
+                        <h3>Iniciante: Lógica e Desenvolvimento Web</h3>
                         <div class="course-item">
                             <div>
-                                <h4>Introdução à Cibersegurança</h4>
-                                <span>Cisco Networking Academy</span>
+                                <h4>Algoritmos e Lógica de Programação</h4>
+                                <span>Curso em Vídeo</span>
                             </div>
                             <a href="#">Acessar curso</a>
                         </div>
                         <div class="course-item">
                             <div>
-                                <h4>Pandas: manipulação, limpeza e análise de dados</h4>
-                                <span>Fundamentos de Redes e Protocolos</span>
+                                <h4>HTML5 e CSS3</h4>
+                                <span>Curso em Vídeo</span>
                             </div>
                             <a href="#">Acessar curso</a>
                         </div>
                         <div class="course-item">
                             <div>
-                                <h4>Introdução ao Linux e Terminal</h4>
-                                <span>Linux Foundation / edX</span>
-                            </div>
-                            <a href="#">Acessar curso</a>
-                        </div>
-                    </div>
-
-                    <div class="course-category">
-                        <h3>Intermediário: Defesa, Redes e Ameaças</h3>
-                        <div class="course-item">
-                            <div>
-                                <h4>Gerenciar Riscos e Ameaças de Segurança</h4>
-                                <span>Microsoft Learn</span>
-                            </div>
-                            <a href="#">Acessar curso</a>
-                        </div>
-                        <div class="course-item">
-                            <div>
-                                <h4>Prevenção de Ataques e Defesa de Redes</h4>
-                                <span>Cisco Networking Academy</span>
-                            </div>
-                            <a href="#">Acessar curso</a>
-                        </div>
-                        <div class="course-item">
-                            <div>
-                                <h4>Prática de Segurança e Hacking Ético (Pre-Security)</h4>
-                                <span>TryHackMe</span>
+                                <h4>JavaScript</h4>
+                                <span>Curso em Vídeo</span>
                             </div>
                             <a href="#">Acessar curso</a>
                         </div>
                     </div>
 
                     <div class="course-category">
-                        <h3>Avançado: Segurança em Nuvem e Resposta a Incidentes</h3>
+                        <h3>Intermediário: Programação e Banco de Dados</h3>
                         <div class="course-item">
                             <div>
-                                <h4>Fundamentos de Segurança em Nuvem (Azure / AWS)</h4>
-                                <span>Microsoft Learn</span>
+                                <h4>Responsive Web Design</h4>
+                                <span>FreeCodeCamp</span>
                             </div>
                             <a href="#">Acessar curso</a>
                         </div>
                         <div class="course-item">
                             <div>
-                                <h4>Análise de Vulnerabilidades e Incidentes (SOC)</h4>
-                                <span>TryHackMe / Cybrary</span>
+                                <h4>JavaScript Algorithms and Data Structures</h4>
+                                <span>FreeCodeCamp</span>
+                            </div>
+                            <a href="#">Acessar curso</a>
+                        </div>
+                        <div class="course-item">
+                            <div>
+                                <h4>Git e GitHub</h4>
+                                <span>Curso em Vídeo</span>
+                            </div>
+                            <a href="#">Acessar curso</a>
+                        </div>
+                    </div>
+
+                    <div class="course-category">
+                        <h3>Avançado: Full Stack e Projetos</h3>
+                        <div class="course-item">
+                            <div>
+                                <h4>Full Stack JavaScript — DAX</h4>
+                                <span>The Odin Project</span>
+                            </div>
+                            <a href="#">Acessar curso</a>
+                        </div>
+                        <div class="course-item">
+                            <div>
+                                <h4>Back End Development and APIs</h4>
+                                <span>FreeCodeCamp</span>
                             </div>
                             <a href="#">Acessar curso</a>
                         </div>
@@ -341,88 +397,96 @@
                 <div id="lista-pagos" class="course-content escondido">
                     
                     <div class="course-category">
-                        <h3>Iniciante: Fundamentos de Cibersegurança</h3>
+                        <h3>Iniciante: Base de Programação</h3>
                         <div class="course-item">
                             <div>
-                                <h4>Curso de Segurança da Informação do Zero</h4>
-                                <span>Udemy (por Bruno Fraga)</span>
+                                <h4>Formação Iniciante em Programação</h4>
+                                <span>Alura</span>
                             </div>
                             <a href="#">Acessar curso</a>
                         </div>
                         <div class="course-item">
                             <div>
-                                <h4>Fundamentos de Cybersecurity e Hacking Ético</h4>
+                                <h4>Formação HTML e CSS</h4>
+                                <span>Alura</span>
+                            </div>
+                            <a href="#">Acessar curso</a>
+                        </div>
+                        <div class="course-item">
+                            <div>
+                                <h4>Lógica de Programação</h4>
                                 <span>Udemy</span>
-                            </div>
-                            <a href="#">Acessar curso</a>
-                        </div>
-                        <div class="course-item">
-                            <div>
-                                <h4>Fundamentos de Segurança e Redes</h4>
-                                <span>FIAP ON</span>
                             </div>
                             <a href="#">Acessar curso</a>
                         </div>
                     </div>
 
                     <div class="course-category">
-                        <h3>Intermediário: Hacking Ético e Defesa de Redes</h3>
+                        <h3>Intermediário: Desenvolvimento Full Stack</h3>
                         <div class="course-item">
                             <div>
-                                <h4>Curso de Pentest Profissional (THP)</h4>
-                                <span>Desec Security</span>
+                                <h4>Formação Full Stack</h4>
+                                <span>Rocketseat</span>
                             </div>
                             <a href="#">Acessar curso</a>
                         </div>
                         <div class="course-item">
                             <div>
-                                <h4>Formação Hacking Ético e Segurança Cibernética</h4>
+                                <h4>Formação JavaScript para Web</h4>
+                                <span>Alura</span>
+                            </div>
+                            <a href="#">Acessar curso</a>
+                        </div>
+                        <div class="course-item">
+                            <div>
+                                <h4>Formação SQL e Banco de Dados</h4>
                                 <span>Udemy</span>
-                            </div>
-                            <a href="#">Acessar curso</a>
-                        </div>
-                        <div class="course-item">
-                            <div>
-                                <h4>Formação Analista de Segurança da Informação</h4>
-                                <span>TryHackMe (Plano VIP Paid)</span>
                             </div>
                             <a href="#">Acessar curso</a>
                         </div>
                     </div>
 
                     <div class="course-category">
-                        <h3>Avançado: Segurança de Alta Performance e Arquitetura</h3>
+                        <h3>Avançado: Arquitetura e Engenharia De Software</h3>
                         <div class="course-item">
                             <div>
-                                <h4>Pós-Graduação ou Extension em Cyber Security</h4>
-                                <span>FIAP</span>
+                                <h4>Formação Arquitetura de Software</h4>
+                                <span>Alura</span>
                             </div>
                             <a href="#">Acessar curso</a>
                         </div>
                         <div class="course-item">
                             <div>
-                                <h4>Pós-Graduação ou Extension em Cyber Security</h4>
-                                <span>Clavis Segurança da Informação</span>
+                                <h4>Desenvolvimento Full Stack avançado</h4>
+                                <span>Udemy</span>
+                            </div>
+                            <a href="#">Acessar curso</a>
+                        </div>
+                        <div class="course-item">
+                            <div>
+                                <h4>Formação/Carreira em Desenvolvimento</h4>
+                                <span>DevMedia</span>
                             </div>
                             <a href="#">Acessar curso</a>
                         </div>
                     </div>
+
                 </div>
 
             </section>
         </div>
     </main>
 
-<!-- Rodapé Completo -->
+    <!-- Rodapé Completo -->
     <footer class="footer footer-dark">
         <div class="footer-container">
             
             <!-- Links de Navegação -->
             <div class="footer-nav">
-                <a href="home.html">Home</a>
+                <a href="../home.html">Home</a>
                 <a href="testeVocacional.html">Teste Vocacional</a>
                 <a href="carreiras.html">Carreiras</a>
-                <a href="#">Sobre Nós</a>
+                <a href="sobre.html">Sobre Nós</a>
             </div>
 
             <!-- Links Sociais (Cegos) -->
@@ -439,7 +503,7 @@
         </div>
     </footer>
 
-    <script src="acessibilidade.js"></script>
+    <script src="../js/acessibilidade.js"></script>
     
     <!-- Script Simples para as Abas de Cursos -->
     <script>

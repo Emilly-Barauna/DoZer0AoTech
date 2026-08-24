@@ -19,7 +19,7 @@
                 <a href="home.html" class="active">Home</a>
                 <a href="html/testeVocacional.html">Teste Vocacional</a>
                 <a href="html/carreiras.html">Carreiras</a>
-                <a href="#">Sobre Nós</a>
+                <a href="html/sobre.html">Sobre Nós</a>
             </nav>
             
     <button class="botao-acessibilidade" id="botaoAcessibilidade" aria-label="Abrir opções de acessibilidade" aria-expanded="false">
@@ -133,52 +133,82 @@
                 <h2>Entenda seu caminho conosco</h2>
             </div>
             <p class="roadmap-description">
-                Dar os primeiros passos na tecnologia pode parecer desafiador diante de tantas possibilidades, mas você não precisa caminhar no escuro. Desenhei um roteiro prático e estruturado para guiar você desde a descoberta inicial até a construção das suas primeiras experiências profissionais. Siga o mapa no seu próprio ritmo:
+                Dar os primeiros passos na tecnologia pode parecer desafiador diante de tantas possibilidades, mas você não precisa caminhar no escuro. Desenhei um roteiro prático e estruturado para guiar você desde a descoberta inicial até a construção das suas primeiras experiências profissionais. 
+                <strong>Siga o mapa no seu próprio ritmo clicando nas bolinhas:</strong>
             </p>
 
-            <div class="roadmap-list">
-                <div class="roadmap-item">
-                    <div class="number-badge">01</div>
-                    <div class="item-content">
-                        <h3>Descubra uma área que combina com você</h3>
-                        <p>Ainda está em dúvida? <a href="html/testeVocacional.html" class="link-inline">Faça o teste vocacional</a> e encontre caminhos relacionados aos seus interesses.</p>                    </div>
-                </div>
+            <div class="treasure-map">
+                <!-- Linha tracejada do mapa com a cor azulada da paleta -->
+                <svg class="map-path-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <path d="M 8 6 C 40 6, 58 10, 58 26 C 58 40, 13 32, 13 49 C 13 65, 63 55, 63 72 C 63 85, 38 80, 38 92" 
+                          fill="none" stroke="#26c6da" stroke-width="0.4" stroke-dasharray="1 1" />
+                </svg>
 
-                <div class="roadmap-item">
-                    <div class="number-badge">02</div>
-                    <div class="item-content">
-                        <h3>Prefere explorar livremente? Conheça todas as áreas.</h3>
-                        <p>Conheça Desenvolvimento, Dados, Segurança e Inteligência Artificial e entenda o que cada área faz.</p>
+                <!-- Passo 1 -->
+                <div class="map-step revealed" id="step1" style="top: 2%; left: 5%;">
+                    <div class="number-badge" onclick="openStep(1)">01</div>
+                    <div class="step-content right">
+                        <h3>Descubra uma área que combina com você</h3>
+                        <p>Ainda está em dúvida? <a href="html/testeVocacional.html" class="link-inline">Faça o teste vocacional</a> e encontre caminhos relacionados aos seus interesses.</p>
                     </div>
                 </div>
 
-                <div class="roadmap-item">
-                    <div class="number-badge">03</div>
-                    <div class="item-content">
+                <!-- Passo 2 -->
+                <div class="map-step" id="step2" style="top: 22%; left: 55%;">
+                    <div class="number-badge" onclick="openStep(2)">02</div>
+                    <div class="step-content right">
+                        <h3>Prefere explorar livremente?</h3>
+                        <p>Conheça Desenvolvimento, Dados, Segurança e IA e entenda o que cada área faz.</p>
+                    </div>
+                </div>
+
+                <!-- Passo 3 -->
+                <div class="map-step" id="step3" style="top: 45%; left: 10%;">
+                    <div class="number-badge" onclick="openStep(3)">03</div>
+                    <div class="step-content bottom">
                         <h3>Conheça as possibilidades de carreira</h3>
                         <p>Veja como é a rotina profissional, quais habilidades são importantes e onde cada caminho pode levar.</p>
                     </div>
                 </div>
 
-                <div class="roadmap-item">
-                    <div class="number-badge">04</div>
-                    <div class="item-content">
+                <!-- Passo 4 -->
+                <div class="map-step" id="step4" style="top: 68%; left: 60%;">
+                    <div class="number-badge" onclick="openStep(4)">04</div>
+                    <div class="step-content bottom">
                         <h3>Encontre por onde começar a estudar</h3>
                         <p>Compare cursos gratuitos e pagos selecionados para quem está começando.</p>
                     </div>
                 </div>
 
-                <div class="roadmap-item">
-                    <div class="number-badge">05</div>
-                    <div class="item-content">
+                <!-- Passo 5 -->
+                <div class="map-step" id="step5" style="top: 88%; left: 35%;">
+                    <div class="number-badge" onclick="openStep(5)">05</div>
+                    <div class="step-content bottom">
                         <h3>Transforme conhecimento em experiência</h3>
                         <p>Crie seu primeiro projeto, desenvolva suas habilidades e comece a construir seu portfólio.
-                            <img src="imagens/Linha de chegada do mapinha.png" class="lumi-inline">
+                            <img src="imagens/Linha de chegada do mapinha.png" class="lumi-inline" alt="Chegada">
                         </p>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Script atualizado para abrir/fechar ao clicar na mesma bolinha -->
+        <script>
+            function openStep(num) {
+                const current = document.getElementById('step' + num);
+                
+                if (current.classList.contains('opened')) {
+                    current.classList.remove('opened');
+                } else {
+                    current.classList.add('opened');
+                    const next = document.getElementById('step' + (num + 1));
+                    if (next) {
+                        next.classList.add('revealed'); 
+                    }
+                }
+            }
+        </script>
 
         <!-- Seção: Teste Vocacional -->
         <section class="vocational-section">
@@ -189,8 +219,7 @@
                         A tecnologia está cheia de oportunidades, mas você sente dúvida sobre qual caminho seguir? O nosso <strong>Teste Vocacional</strong> foi criado exatamente para te ajudar a dar esse passo com confiança, clareza e sem complicação.
                     </p>
                 </div>
-                <div class="vocational-avatar">
-                </div>
+                <div class="vocational-avatar"></div>
             </div>
 
             <p class="section-subtitle">Como funciona?</p>
@@ -222,7 +251,8 @@
             </div>
 
             <div class="center-btn-container">
-                <a href="html/testeVocacional.html" class="btn-primary btn-large">Realizar teste vocacional</a>            </div>
+                <a href="html/testeVocacional.html" class="btn-primary btn-large">Realizar teste vocacional</a>
+            </div>
         </section>
 
         <section class="areas-section">
@@ -231,13 +261,13 @@
 
             <div class="cards-grid">
                 <!-- Card 1: Desenvolvimento -->
-<div class="area-card">
+                <div class="area-card">
                     <div class="card-header">
                         <img src="imagens/Desenvolvimento de Software.png" alt="Desenvolvimento de Software">
                         <h3>Desenvolvimento de Software</h3>
                     </div>
                     <p>Crie sites, sistemas e aplicativos utilizando linguagens de programação, bancos de dados e tecnologias modernas para desenvolver soluções digitais inovadoras.</p>
-                    <a href="desenvolvimento.html" class="btn-primary btn-card" style="text-decoration: none; display: inline-block; text-align: center;">Realizar essa trilha</a>
+                    <a href="html/curso_desenvolvimento.html" class="btn-primary btn-card" style="text-decoration: none; display: inline-block; text-align: center;">Realizar essa trilha</a>
                 </div>
 
                 <!-- Card 2: Dados -->
@@ -257,7 +287,7 @@
                         <h3>Segurança da Informação</h3>
                     </div>
                     <p>Proteja sistemas, redes e informações contra ataques cibernéticos, vazamentos de dados e acessos não autorizados por meio de boas práticas.</p>
-                    <a href="seguranca.html" class="btn-primary btn-card" style="text-decoration: none; display: inline-block; text-align: center;">Realizar essa trilha</a>
+                    <a href="html/curso_seguranca.html" class="btn-primary btn-card" style="text-decoration: none; display: inline-block; text-align: center;">Realizar essa trilha</a>
                 </div>
 
                 <!-- Card 4: IA -->
@@ -267,14 +297,14 @@
                         <h3>Inteligência Artificial</h3>
                     </div>
                     <p>É uma tecnologia que permite máquinas simularem a inteligência humana, aprendendo com dados, reconhecendo padrões e tomando decisões de forma autônoma.</p>
-                    <a href="ia.html" class="btn-primary btn-card" style="text-decoration: none; display: inline-block; text-align: center;">Realizar essa trilha</a>
+                    <a href="html/curso_ia.html" class="btn-primary btn-card" style="text-decoration: none; display: inline-block; text-align: center;">Realizar essa trilha</a>
                 </div>
             </div>
         </section>
 
     </main>
 
-<!-- Rodapé Completo -->
+    <!-- Rodapé Completo -->
     <footer class="footer footer-dark">
         <div class="footer-container">
             
@@ -283,10 +313,10 @@
                 <a href="home.html">Home</a>
                 <a href="html/testeVocacional.html">Teste Vocacional</a>
                 <a href="html/carreiras.html">Carreiras</a>
-                <a href="#">Sobre Nós</a>
+                <a href="html/sobre.html">Sobre Nós</a>
             </div>
 
-            <!-- Links Sociais (Cegos) -->
+            <!-- Links Sociais -->
             <div class="footer-social">
                 <a href="https://www.instagram.com/" target="_blank">Instagram</a>
                 <a href="https://br.linkedin.com/" target="_blank">LinkedIn</a>

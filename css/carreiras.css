@@ -254,6 +254,7 @@ p {
     color: #0f172a !important;
     border-color: #facc15;
 }
+}
 
 /* --- RESPONSIVIDADE --- */
 @media (max-width: 768px) {
