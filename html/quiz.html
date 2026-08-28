@@ -20,11 +20,73 @@
                 <a href="../home.html" class="nav-light">Home</a>
                 <a href="testeVocacional.html" class="active nav-light">Teste Vocacional</a>
                 <a href="carreiras.html" class="nav-light">Carreiras</a>
-                <a href="#" class="nav-light">Sobre</a>
+                <a href="sobre.html" class="nav-light">Sobre</a>
             </nav>
-        
-        <button class="botao-acessibilidade" id="botaoAcessibilidade" aria-label="Abrir opções de acessibilidade" aria-expanded="false">
-    ♿
+    </header>
+
+    <main class="main-container">
+        <div class="quiz-wrapper">
+            <!-- Container do Quiz -->
+            <div id="quiz-container">
+                <div class="progress-header">
+                    <span id="progresso-texto">Pergunta 1 de 8</span>
+                    <span id="porcentagem-texto">12.5%</span>
+                </div>
+                <div class="progress-bar-bg">
+                    <div id="progress-bar-fill" class="progress-bar-fill"></div>
+                </div>
+
+                <h2 id="pergunta" class="quiz-question-title">Carregando pergunta...</h2>
+
+                <div id="opcoes" class="quiz-options-container"></div>
+
+                <div class="quiz-action-container">
+                    <button id="btn-proxima" class="btn-primary" onclick="confirmarAvanco()" disabled>Próxima pergunta</button>
+                </div>
+            </div>
+
+            <!-- Container do Resultado -->
+            <div id="resultado-container" class="escondido">
+                <h2>Resultado do seu Teste Vocacional</h2>
+                <p id="resultado-texto" class="resultado-destaque"></p>
+                <div class="center-btn-container">
+                    <button class="btn-primary" onclick="reiniciarQuiz()">Refazer Teste</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<!-- Rodapé Completo -->
+    <footer class="footer footer-dark">
+        <div class="footer-container">
+            
+            <!-- Links de Navegação -->
+            <div class="footer-nav">
+                <a href="../home.html">Home</a>
+                <a href="testeVocacional.html">Teste Vocacional</a>
+                <a href="carreiras.html">Carreiras</a>
+                <a href="sobre.html">Sobre Nós</a>
+            </div>
+
+            <!-- Links Sociais -->
+            <div class="footer-social">
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                <a href="https://br.linkedin.com/" target="_blank">LinkedIn</a>
+            </div>
+
+            <!-- Direitos Autorais -->
+            <div class="footer-copyright">
+                <p>&copy; 2026 Do 0 ao Tech. Todos os direitos reservados.</p>
+            </div>
+            
+        </div>
+    </footer>
+
+    <script src="../js/quiz.js"></script>
+
+    <!--Menu de acessibilidade -->
+    <button class="botao-acessibilidade" id="botaoAcessibilidade" aria-label="Abrir opções de acessibilidade" aria-expanded="false">
+        ♿
     </button>
 
     <div class="menu-acessibilidade" id="menuAcessibilidade" aria-hidden="true">
@@ -34,7 +96,6 @@
         </div>
 
         <div class="opcoes-acessibilidade">
-
             <button class="opcao-acessibilidade" id="aumentarTexto">
                 <span>🔠</span>
                 <div>
@@ -90,71 +151,10 @@
                     <small>Voltar às configurações originais</small>
                 </div>
             </button>
-
         </div>
     </div>
-            
-    </header>
 
-    <main class="main-container">
-        <div class="quiz-wrapper">
-            <!-- Container do Quiz -->
-            <div id="quiz-container">
-                <div class="progress-header">
-                    <span id="progresso-texto">Pergunta 1 de 8</span>
-                    <span id="porcentagem-texto">12.5%</span>
-                </div>
-                <div class="progress-bar-bg">
-                    <div id="progress-bar-fill" class="progress-bar-fill"></div>
-                </div>
+    <script src="js/acessibilidade.js"></script>
 
-                <h2 id="pergunta" class="quiz-question-title">Carregando pergunta...</h2>
-
-                <div id="opcoes" class="quiz-options-container"></div>
-
-                <div class="quiz-action-container">
-                    <button id="btn-proxima" class="btn-primary" onclick="confirmarAvanco()" disabled>Próxima pergunta</button>
-                </div>
-            </div>
-
-            <!-- Container do Resultado -->
-            <div id="resultado-container" class="escondido">
-                <h2>Resultado do seu Teste Vocacional</h2>
-                <p id="resultado-texto" class="resultado-destaque"></p>
-                <div class="center-btn-container">
-                    <button class="btn-primary" onclick="reiniciarQuiz()">Refazer Teste</button>
-                </div>
-            </div>
-        </div>
-    </main>
-
-<!-- Rodapé Completo -->
-    <footer class="footer footer-dark">
-        <div class="footer-container">
-            
-            <!-- Links de Navegação -->
-            <div class="footer-nav">
-                <a href="../home.html">Home</a>
-                <a href="testeVocacional.html">Teste Vocacional</a>
-                <a href="carreiras.html">Carreiras</a>
-                <a href="#">Sobre Nós</a>
-            </div>
-
-            <!-- Links Sociais (Cegos) -->
-            <div class="footer-social">
-                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-                <a href="https://br.linkedin.com/" target="_blank">LinkedIn</a>
-            </div>
-
-            <!-- Direitos Autorais -->
-            <div class="footer-copyright">
-                <p>&copy; 2026 Do 0 ao Tech. Todos os direitos reservados.</p>
-            </div>
-            
-        </div>
-    </footer>
-
-    <script src="../js/quiz.js"></script>
-    <script src="../js/acessibilidade.js"></script>
 </body>
 </html>

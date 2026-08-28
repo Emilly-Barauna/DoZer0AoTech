@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Área de Dados - Do Zer0 ao Tech</title>
+    <title>Desenvolvimento de Software - Do Zer0 ao Tech</title>
     <link rel="stylesheet" href="../home.css">
     <link rel="stylesheet" href="../css/curso_dados.css">
     <link rel="stylesheet" href="../css/acessibilidade.css">
 </head>
 <body>
 
-    <!-- Header Escuro -->
     <header class="header header-dark">
         <div class="header-container">
             <div class="logo">
@@ -23,6 +22,78 @@
                 <a href="carreiras.html" class="active nav-light">Carreiras</a>
                 <a href="sobre.html" class="nav-light">Sobre Nós</a>
             </nav>
+            
+        <button class="botao-acessibilidade" id="botaoAcessibilidade" aria-label="Abrir opções de acessibilidade" aria-expanded="false">
+    ♿
+    </button>
+
+    <div class="menu-acessibilidade" id="menuAcessibilidade" aria-hidden="true">
+        <div class="cabecalho-acessibilidade">
+            <h2>Acessibilidade</h2>
+            <button id="fecharAcessibilidade" aria-label="Fechar menu">×</button>
+        </div>
+
+        <div class="opcoes-acessibilidade">
+
+            <button class="opcao-acessibilidade" id="aumentarTexto">
+                <span>🔠</span>
+                <div>
+                    <strong>Aumentar texto</strong>
+                    <small>Aumentar o tamanho da fonte</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="diminuirTexto">
+                <span>🔡</span>
+                <div>
+                    <strong>Diminuir texto</strong>
+                    <small>Diminuir o tamanho da fonte</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="lerAoPassar">
+                <span>🖱️</span>
+                <div>
+                    <strong>Ler ao passar o mouse</strong>
+                    <small>Ouvir o conteúdo ao posicionar o cursor</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="altoContraste">
+                <span>◐</span>
+                <div>
+                    <strong>Alto contraste</strong>
+                    <small>Aumentar o contraste das cores</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="contrasteNegativo">
+                <span>◑</span>
+                <div>
+                    <strong>Contraste negativo</strong>
+                    <small>Inverter as cores da página</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="destacarLinks">
+                <span>🔗</span>
+                <div>
+                    <strong>Destacar links</strong>
+                    <small>Facilitar a identificação dos links</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade restaurar" id="restaurarAcessibilidade">
+                <span>↩️</span>
+                <div>
+                    <strong>Restaurar padrão</strong>
+                    <small>Voltar às configurações originais</small>
+                </div>
+            </button>
+
+        </div>
+    </div>
+            
     </header>
 
     <main class="main-container">
@@ -30,12 +101,13 @@
             
             <!-- Hero Section -->
             <section class="dados-hero">
-                <img src="../imagens/LUMI - IA.png" alt="Mascote Lumi Área de Dados">
-                <h1>Inteligência Artificial</h1>
+                <img src="../imagens/Lumi - Software.png" alt="Mascote Lumi Área de Desenvolvimento">
+                <h1>Desenvolvimento de Software</h1>
             </section>
 
             <p class="dados-text-block">
-                Inteligência Artificial utiliza dados para ensinar máquinas a reconhecer padrões e resolver problemas. Quem trabalha nessa área desenvolve modelos, treina algoritmos e cria sistemas inteligentes para diferentes aplicações.            </p>
+                Desenvolvimento de software é usar código para criar soluções como sites, aplicativos e sistemas. Existem diferentes caminhos na área, desde o que aparece na tela até dados, segurança e funcionamento interno.
+            </p>
 
             <!-- Seção 1: O que você pode fazer -->
             <section class="dados-section">
@@ -43,15 +115,15 @@
                 <div class="cards-trilha">
                     <div class="trilha-card">
                         <h3>Criar</h3>
-                        <p>Desenvolver sistemas inteligentes capazes de aprender com dados e realizar tarefas de forma automatizada.</p>
+                        <p>Transformar ideias em sites, aplicativos e sistemas que as pessoas possam usar.</p>
                     </div>
                     <div class="trilha-card">
-                        <h3>Treinar</h3>
-                        <p>Preparar dados e treinar modelos para que a Inteligência Artificial consiga reconhecer padrões e gerar respostas.</p>
+                        <h3>Programar</h3>
+                        <p>Escrever códigos e construir as funcionalidades que fazem um software funcionar.</p>
                     </div>
                     <div class="trilha-card">
                         <h3>Resolver</h3>
-                        <p>Usar IA para encontrar soluções, automatizar processos e resolver problemas de diferentes áreas.</p>
+                        <p>Encontrar problemas no código, corrigir erros e melhorar aplicações existentes.</p>
                     </div>
                 </div>
             </section>
@@ -60,49 +132,49 @@
             <section class="dados-section">
                 <h2 class="section-title">Por onde começar?</h2>
                 <p class="dados-text-block">
-                    Não tente aprender tudo de uma vez! Comece entendendo os fundamentos da programação, dos dados e de como a Inteligência Artificial funciona. O importante agora é construir uma boa base e praticar criando pequenas soluções.
+                    Não tente aprender várias linguagens de uma vez! Comece entendendo a lógica e escolha uma linguagem para praticar. O importante agora é construir uma boa base.
                 </p>
                 <div class="passos-lista">
                     <div class="passo-item">
                         <div class="passo-numero">01</div>
                         <div class="passo-texto">
                             <h4>Lógica de programação</h4>
-                            <p>Aprenda a pensar de forma estruturada e resolver problemas usando código.</p>
+                            <p>Aprenda a pensar passo a passo e resolver problemas com código.</p>
                         </div>
                     </div>
                     <div class="passo-item">
                         <div class="passo-numero">02</div>
                         <div class="passo-texto">
-                            <h4>Python</h4>
-                            <p>Aprenda uma das principais linguagens utilizadas para trabalhar com Inteligência Artificial e dados.</p>
+                            <h4>HTML + CSS</h4>
+                            <p>Comece criando páginas e entendendo como as interfaces são estruturadas.</p>
                         </div>
                     </div>
                     <div class="passo-item">
                         <div class="passo-numero">03</div>
                         <div class="passo-texto">
-                            <h4>Matemática e Estatística</h4>
-                            <p>Entenda os conceitos necessários para compreender como os modelos aprendem e identificam padrões.</p>
+                            <h4>JavaScript</h4>
+                            <p>Dê vida às páginas e aprenda sua primeira linguagem de programação.</p>
                         </div>
                     </div>
                     <div class="passo-item">
                         <div class="passo-numero">04</div>
                         <div class="passo-texto">
-                            <h4>Dados</h4>
-                            <p>Aprenda a coletar, organizar, tratar e analisar os dados utilizados para treinar modelos de IA.</p>
+                            <h4>Git + GitHub</h4>
+                            <p>Aprenda a salvar versões do seu código e compartilhar seus projetos.</p>
                         </div>
                     </div>
                     <div class="passo-item">
                         <div class="passo-numero">05</div>
                         <div class="passo-texto">
-                            <h4>Machine Learning</h4>
-                            <p>Conheça os principais algoritmos e aprenda como treinar modelos para fazer previsões e reconhecer padrões.</p>
+                            <h4>Banco de Dados</h4>
+                            <p>Aprenda como os sistemas guardam, organizam e encontram informações.</p>
                         </div>
                     </div>
                     <div class="passo-item">
                         <div class="passo-numero">06</div>
                         <div class="passo-texto">
                             <h4>Projetos</h4>
-                            <p>Coloque tudo em prática criando seus próprios projetos de Inteligência Artificial para aprender e montar seu portfólio.</p>
+                            <p>Coloque tudo em prática criando seus primeiros projetos para o portfólio.</p>
                         </div>
                     </div>
                 </div>
@@ -118,64 +190,67 @@
                     <span>Carreira avançada</span>
                 </div>
 
+                <!-- Dev Front-end -->
                 <div class="career-row row-yellow">
                     <div class="career-cell">
-                        <h4>Engenheiro de Machine Learning Júnior</h4>
-                        <p>Auxilia no desenvolvimento, treinamento e avaliação de modelos de aprendizado de máquina.</p>
+                        <h4>Dev Front-end Júnior</h4>
+                        <p>Cria interfaces e páginas que os usuários utilizam.</p>
                     </div>
                     <div class="career-cell">
-                        <h4>Engenheiro de Machine Learning Pleno</h4>
-                        <p>Desenvolve e coloca modelos de IA em produção, trabalhando com dados e sistemas.</p>
+                        <h4>Dev Front-end Pleno</h4>
+                        <p>Desenvolve interfaces mais complexas e experiências interativas.</p>
                     </div>
                     <div class="career-cell">
-                        <h4>Engenheiro de Machine Learning Sênior</h4>
-                        <p>Projeta soluções de IA escaláveis e define arquiteturas para sistemas inteligentes.</p>
+                        <h4>Dev Front-end Sênior</h4>
+                        <p>Define soluções avançadas de interface, arquitetura e experiência.</p>
                     </div>
                 </div>
 
+                <!-- Dev Back-end -->
                 <div class="career-row row-blue">
                     <div class="career-cell">
-                        <h4>Cientista de Dados Júnior</h4>
-                        <p>Analisa dados e auxilia na criação de modelos para encontrar padrões e fazer previsões.</p>
+                        <h4>Dev Back-end Júnior</h4>
+                        <p>Desenvolve APIs, regras de negócio e integrações.</p>
                     </div>
                     <div class="career-cell">
-                        <h4>Cientista de Dados Pleno</h4>
-                        <p>Desenvolve modelos estatísticos e de Machine Learning para resolver problemas de negócio.</p>
+                        <h4>Dev Back-end Pleno</h4>
+                        <p>Desenvolve sistemas, APIs e integrações mais robustas.</p>
                     </div>
                     <div class="career-cell">
-                        <h4>Cientista de Dados Sênior</h4>
-                        <p>Lidera projetos de modelagem e define estratégias para utilizar IA de forma eficiente.</p>
+                        <h4>Dev Back-end Sênior</h4>
+                        <p>Projeta sistemas escaláveis, seguros e de alta performance.</p>
                     </div>
                 </div>
 
+                <!-- Dev Mobile -->
                 <div class="career-row row-yellow">
                     <div class="career-cell">
-                        <h4>Desenvolvidor de IA Júnior</h4>
-                        <p>Ajuda a criar aplicações que utilizam modelos de Inteligência Artificial.</p>
+                        <h4>Dev Mobile Júnior</h4>
+                        <p>Cria aplicativos para celulares e dispositivos móveis.</p>
                     </div>
                     <div class="career-cell">
-                        <h4>Desenvolvidor de IA Pleno</h4>
-                        <p>Integra modelos de IA a sistemas, aplicativos e produtos digitais.</p>
+                        <h4>Dev Mobile Pleno</h4>
+                        <p>Cria aplicativos completos e soluções móveis mais avançadas.</p>
                     </div>
                     <div class="career-cell">
-                        <h4>Especialista IA</h4>
-                        <p>Projeta soluções avançadas de Inteligência Artificial e orienta decisões técnicas.</p>
+                        <h4>Dev Mobile Sênior</h4>
+                        <p>Lidera o desenvolvimento de aplicativos complexos e escaláveis.</p>
                     </div>
                 </div>
 
-                <!-- BI -->
+                <!-- Dev Full Stack -->
                 <div class="career-row row-blue">
                     <div class="career-cell">
-                        <h4>Engenheiro de Dados Júnior</h4>
-                        <p>Auxilia na preparação e organização dos dados utilizados por modelos de IA.</p>
+                        <h4>Dev Full Stack Júnior</h4>
+                        <p>Trabalha tanto com a interface quanto com o back-end.</p>
                     </div>
                     <div class="career-cell">
-                        <h4>Engenheiro de Dados Pleno</h4>
-                        <p>Constrói pipelines e estruturas para disponibilizar dados para sistemas inteligentes.</p>
+                        <h4>Dev Full Stack Pleno</h4>
+                        <p>Atua em toda a aplicação, do front-end ao back-end.</p>
                     </div>
                     <div class="career-cell">
-                        <h4>Engenheiro de Dados Sênior</h4>
-                        <p>Projeta arquiteturas de dados robustas e escaláveis para aplicações de IA.</p>
+                        <h4>Dev Full Stack Sênior</h4>
+                        <p>Domina toda a aplicação e participa de decisões de arquitetura.</p>
                     </div>
                 </div>
             </section>
@@ -185,7 +260,7 @@
                 <h2 class="section-title">Qual a média salarial?</h2>
                 <p class="dados-text-block" style="font-size: 0.9rem; margin-bottom: 30px;">
                     Valores aproximados para o mercado brasileiro em 2026. Podem variar conforme experiência, localização, empresa, especialização e modelo de contratação. 
-                    <a href="https://www.glassdoor.com.br" target="_blank" class="link-inline" style="color: #26c6da; text-decoration: underline; margin-left: 5px;">Ver fonte da pesquisa</a>
+                    <a href="https://www.glassdoor.com.br/index.htm" target="_blank" class="link-inline" style="color: #26c6da; text-decoration: underline; margin-left: 5px;">Ver fonte da pesquisa</a>
                 </p>
 
                 <div class="salary-list">
@@ -197,17 +272,17 @@
                     <div class="salary-item">
                         <span class="salary-level">Júnior</span>
                         <div class="salary-bar-bg"><div class="salary-bar-fill" style="width: 30%;"></div></div>
-                        <span class="salary-value">R$ 3.000 - 7.000</span>
+                        <span class="salary-value">R$ 3.000 - 6.000</span>
                     </div>
                     <div class="salary-item">
                         <span class="salary-level">Pleno</span>
                         <div class="salary-bar-bg"><div class="salary-bar-fill" style="width: 55%;"></div></div>
-                        <span class="salary-value">R$ 7.000 - 14.000</span>
+                        <span class="salary-value">R$ 6.000 - 12.000</span>
                     </div>
                     <div class="salary-item">
                         <span class="salary-level">Sênior</span>
                         <div class="salary-bar-bg"><div class="salary-bar-fill" style="width: 80%;"></div></div>
-                        <span class="salary-value">R$ 12.000 - 25.000</span>
+                        <span class="salary-value">R$ 12.000 - 22.000</span>
                     </div>
                     <div class="salary-item">
                         <span class="salary-level">Tech Lead</span>
@@ -221,16 +296,16 @@
             <section class="dados-section">
                 <h2 class="section-title">Conheça a rotina real</h2>
                 <p class="dados-text-block" style="font-size: 0.9rem; margin-bottom: 30px;">
-                    Assista ao vídeo preparado por um profissional da área de TI e veja um panorama completo de como é o dia a dia nos bastidores da tecnologia!
+                    Assista ao vídeo preparado por um profissional da área de Desenvolvimento e acompanhe de perto como é a dinâmica do dia a dia na criação de softwares.
                 </p>
 
                 <div class="video-card">
                     
                     <!-- Link do video -->
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Tl0S5FB988Q?si=QYG8hjI8gbS9w2Xj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nOz8oW0hNRU?si=SADHYxt3ykgYOLHL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    
                     <div class="video-info">
-                        <h3>Minha Honesta Rotina como "Diretor de T.I"</h3>
-                        <a href="https://www.youtube.com/@dewoibau" target="_blank" class="link-inline">vbluuiza</a>
+                        <h3>Minha Rotina REAL como Engenheira de Software</h3>
+                        <a href="https://www.youtube.com/channel/UC5zu0F3DdcNyFAWYTb4SYPQ" target="_blank" class="link-inline">Caio Andres</a>
                     </div>
                 </div>
             </section>
@@ -249,75 +324,68 @@
                 <div id="lista-gratuitos" class="course-content">
                     
                     <div class="course-category">
-                        <h3>Iniciante: Fundamentos de IA e Python</h3>
+                        <h3>Iniciante: Lógica e Desenvolvimento Web</h3>
                         <div class="course-item">
                             <div>
-                                <h4>Python</h4>
-                                <span>Kaggle</span>
+                                <h4>Algoritmos e Lógica de Programação</h4>
+                                <span>Curso em Vídeo</span>
                             </div>
                             <a href="#">Acessar curso</a>
                         </div>
                         <div class="course-item">
                             <div>
-                                <h4>Intro to Machine Learning</h4>
-                                <span>Kaggle</span>
+                                <h4>HTML5 e CSS3</h4>
+                                <span>Curso em Vídeo</span>
                             </div>
                             <a href="#">Acessar curso</a>
                         </div>
                         <div class="course-item">
                             <div>
-                                <h4>Introduction to Generative AI</h4>
-                                <span>Google Cloud</span>
-                            </div>
-                            <a href="#">Acessar curso</a>
-                        </div>
-                    </div>
-
-                    <div class="course-category">
-                        <h3>Intermediário: Machine Learning e IA Generativa</h3>
-                        <div class="course-item">
-                            <div>
-                                <h4>Intermediate Machine Learning</h4>
-                                <span>Microsoft Learn</span>
-                            </div>
-                            <a href="#">Kaggle</a>
-                        </div>
-                        <div class="course-item">
-                            <div>
-                                <h4>Generative AI for Everyone</h4>
-                                <span>DeepLearning.AI</span>
-                            </div>
-                            <a href="#">Acessar curso</a>
-                        </div>
-                        <div class="course-item">
-                            <div>
-                                <h4>Introduction to Large Language Models</h4>
-                                <span>Google Cloud</span>
+                                <h4>JavaScript</h4>
+                                <span>Curso em Vídeo</span>
                             </div>
                             <a href="#">Acessar curso</a>
                         </div>
                     </div>
 
                     <div class="course-category">
-                        <h3>Avançado: IA Avançada</h3>
+                        <h3>Intermediário: Programação e Banco de Dados</h3>
                         <div class="course-item">
                             <div>
-                                <h4>Intro to Deep Learning</h4>
-                                <span>Kaggle</span>
+                                <h4>Responsive Web Design</h4>
+                                <span>FreeCodeCamp</span>
                             </div>
                             <a href="#">Acessar curso</a>
                         </div>
                         <div class="course-item">
                             <div>
-                                <h4>Cursos de Deep Learning</h4>
-                                <span>DeepLearning.AI</span>
+                                <h4>JavaScript Algorithms and Data Structures</h4>
+                                <span>FreeCodeCamp</span>
                             </div>
                             <a href="#">Acessar curso</a>
                         </div>
-                            <div class="course-item">
+                        <div class="course-item">
                             <div>
-                                <h4>Course - Transformers e LLMs</h4>
-                                <span>Hugging Face</span>
+                                <h4>Git e GitHub</h4>
+                                <span>Curso em Vídeo</span>
+                            </div>
+                            <a href="#">Acessar curso</a>
+                        </div>
+                    </div>
+
+                    <div class="course-category">
+                        <h3>Avançado: Full Stack e Projetos</h3>
+                        <div class="course-item">
+                            <div>
+                                <h4>Full Stack JavaScript — DAX</h4>
+                                <span>The Odin Project</span>
+                            </div>
+                            <a href="#">Acessar curso</a>
+                        </div>
+                        <div class="course-item">
+                            <div>
+                                <h4>Back End Development and APIs</h4>
+                                <span>FreeCodeCamp</span>
                             </div>
                             <a href="#">Acessar curso</a>
                         </div>
@@ -329,86 +397,87 @@
                 <div id="lista-pagos" class="course-content escondido">
                     
                     <div class="course-category">
-                        <h3>Iniciante: Fundamentos de IA</h3>
+                        <h3>Iniciante: Base de Programação</h3>
                         <div class="course-item">
                             <div>
-                                <h4>Formação Inteligência Artificial</h4>
+                                <h4>Formação Iniciante em Programação</h4>
                                 <span>Alura</span>
                             </div>
                             <a href="#">Acessar curso</a>
                         </div>
                         <div class="course-item">
                             <div>
-                                <h4>Inteligência Artificial para Iniciantes</h4>
-                                <span>Udemy</span>
+                                <h4>Formação HTML e CSS</h4>
+                                <span>Alura</span>
                             </div>
                             <a href="#">Acessar curso</a>
                         </div>
                         <div class="course-item">
                             <div>
-                                <h4>AI Fundamentals</h4>
-                                <span>DataCamp</span>
+                                <h4>Lógica de Programação</h4>
+                                <span>Udemy</span>
                             </div>
                             <a href="#">Acessar curso</a>
                         </div>
                     </div>
 
                     <div class="course-category">
-                        <h3>Intermediário: Machine Learning e IA Generativa</h3>
+                        <h3>Intermediário: Desenvolvimento Full Stack</h3>
                         <div class="course-item">
                             <div>
-                                <h4>Formação Machine Learning</h4>
+                                <h4>Formação Full Stack</h4>
+                                <span>Rocketseat</span>
+                            </div>
+                            <a href="#">Acessar curso</a>
+                        </div>
+                        <div class="course-item">
+                            <div>
+                                <h4>Formação JavaScript para Web</h4>
                                 <span>Alura</span>
                             </div>
                             <a href="#">Acessar curso</a>
                         </div>
                         <div class="course-item">
                             <div>
-                                <h4>Machine Learning A-Z</h4>
+                                <h4>Formação SQL e Banco de Dados</h4>
                                 <span>Udemy</span>
-                            </div>
-                            <a href="#">Acessar curso</a>
-                        </div>
-                        <div class="course-item">
-                            <div>
-                                <h4>Generative AI</h4>
-                                <span>DeepLearning.AI</span>
                             </div>
                             <a href="#">Acessar curso</a>
                         </div>
                     </div>
 
                     <div class="course-category">
-                        <h3>Avançado: Especialista em IA</h3>
+                        <h3>Avançado: Arquitetura e Engenharia De Software</h3>
                         <div class="course-item">
                             <div>
-                                <h4>Formação Engenheira de IA</h4>
+                                <h4>Formação Arquitetura de Software</h4>
                                 <span>Alura</span>
                             </div>
                             <a href="#">Acessar curso</a>
                         </div>
                         <div class="course-item">
                             <div>
-                                <h4>Deep Learning / Redes Neurais</h4>
+                                <h4>Desenvolvimento Full Stack avançado</h4>
                                 <span>Udemy</span>
                             </div>
                             <a href="#">Acessar curso</a>
                         </div>
                         <div class="course-item">
                             <div>
-                                <h4>Machine Learning Scientist / Data Scientist</h4>
-                                <span>DataCamp</span>
+                                <h4>Formação/Carreira em Desenvolvimento</h4>
+                                <span>DevMedia</span>
                             </div>
                             <a href="#">Acessar curso</a>
                         </div>
                     </div>
+
                 </div>
 
             </section>
         </div>
     </main>
 
-<!-- Rodapé Completo -->
+    <!-- Rodapé Completo -->
     <footer class="footer footer-dark">
         <div class="footer-container">
             
@@ -420,7 +489,7 @@
                 <a href="sobre.html">Sobre Nós</a>
             </div>
 
-            <!-- Links Sociais -->
+            <!-- Links Sociais (Cegos) -->
             <div class="footer-social">
                 <a href="https://www.instagram.com/" target="_blank">Instagram</a>
                 <a href="https://br.linkedin.com/" target="_blank">LinkedIn</a>
@@ -433,6 +502,7 @@
             
         </div>
     </footer>
+
     <!--Menu de acessibilidade -->
     <button class="botao-acessibilidade" id="botaoAcessibilidade" aria-label="Abrir opções de acessibilidade" aria-expanded="false">
         ♿
@@ -503,7 +573,7 @@
         </div>
     </div>
 
-    <script src="js/acessibilidade.js"></script>
+    <script src="../js/acessibilidade.js"></script>
 
     
     <!-- Script Simples para as Abas de Cursos -->

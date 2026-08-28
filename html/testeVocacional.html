@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste Vocacional - Do Zer0 ao Tech</title>
-    <link rel="stylesheet" href="../home.css" type="text/css">
+    <link rel="stylesheet" href="../home.html" type="text/css">
     <link rel="stylesheet" href="../css/acessibilidade.css">
 </head>
 <body>
 
-    <!-- Header com fundo Azul Escuro (conforme Figma) -->
     <header class="header header-dark">
         <div class="header-container">
             <div class="logo">
@@ -20,7 +19,7 @@
                 <a href="../home.html" class="nav-light">Home</a>
                 <a href="testeVocacional.html" class="active nav-light">Teste Vocacional</a>
                 <a href="carreiras.html" class="nav-light">Carreiras</a>
-                <a href="#" class="nav-light">Sobre Nós</a>
+                <a href="sobre.html" class="nav-light">Sobre Nós</a>
             </nav>
             
         <button class="botao-acessibilidade" id="botaoAcessibilidade" aria-label="Abrir opções de acessibilidade" aria-expanded="false">
@@ -94,6 +93,7 @@
         </div>
     </div>
                     
+
     </header>
 
     <main class="main-container">
@@ -107,7 +107,7 @@
                 </p>
             </div>
 
-            <!-- Etapas do Teste (Com Mascote no lado direito) -->
+            <!-- Etapas do Teste -->
             <div class="vocational-body">
                 <div class="vocational-steps">
                     <p class="section-subtitle">Como funciona?</p>
@@ -159,10 +159,10 @@
                 <a href="../home.html">Home</a>
                 <a href="testeVocacional.html">Teste Vocacional</a>
                 <a href="carreiras.html">Carreiras</a>
-                <a href="#">Sobre Nós</a>
+                <a href="sobre.html">Sobre Nós</a>
             </div>
 
-            <!-- Links Sociais (Cegos) -->
+            <!-- Links Sociais -->
             <div class="footer-social">
                 <a href="https://www.instagram.com/" target="_blank">Instagram</a>
                 <a href="https://br.linkedin.com/" target="_blank">LinkedIn</a>
@@ -175,7 +175,77 @@
             
         </div>
     </footer>
-    <script src="../js/acessibilidade.js"></script>
+    <!--Menu de acessibilidade -->
+    <button class="botao-acessibilidade" id="botaoAcessibilidade" aria-label="Abrir opções de acessibilidade" aria-expanded="false">
+        ♿
+    </button>
+
+    <div class="menu-acessibilidade" id="menuAcessibilidade" aria-hidden="true">
+        <div class="cabecalho-acessibilidade">
+            <h2>Acessibilidade</h2>
+            <button id="fecharAcessibilidade" aria-label="Fechar menu">×</button>
+        </div>
+
+        <div class="opcoes-acessibilidade">
+            <button class="opcao-acessibilidade" id="aumentarTexto">
+                <span>🔠</span>
+                <div>
+                    <strong>Aumentar texto</strong>
+                    <small>Aumentar o tamanho da fonte</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="diminuirTexto">
+                <span>🔡</span>
+                <div>
+                    <strong>Diminuir texto</strong>
+                    <small>Diminuir o tamanho da fonte</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="lerAoPassar">
+                <span>🖱️</span>
+                <div>
+                    <strong>Ler ao passar o mouse</strong>
+                    <small>Ouvir o conteúdo ao posicionar o cursor</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="altoContraste">
+                <span>◐</span>
+                <div>
+                    <strong>Alto contraste</strong>
+                    <small>Aumentar o contraste das cores</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="contrasteNegativo">
+                <span>◑</span>
+                <div>
+                    <strong>Contraste negativo</strong>
+                    <small>Inverter as cores da página</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade" id="destacarLinks">
+                <span>🔗</span>
+                <div>
+                    <strong>Destacar links</strong>
+                    <small>Facilitar a identificação dos links</small>
+                </div>
+            </button>
+
+            <button class="opcao-acessibilidade restaurar" id="restaurarAcessibilidade">
+                <span>↩️</span>
+                <div>
+                    <strong>Restaurar padrão</strong>
+                    <small>Voltar às configurações originais</small>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <script src="js/acessibilidade.js"></script>
 
 </body>
 </html>

@@ -193,10 +193,6 @@ h1, h2, h3 {
     font-size: 2rem;
 }
 
-.icon-title {
-    width: 35px;
-}
-
 .roadmap-description {
     font-size: 0.85rem;
     color: #0f172a;
@@ -204,40 +200,123 @@ h1, h2, h3 {
     max-width: 850px;
 }
 
-.roadmap-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+/* --- MAPA DO TESOURO INTERATIVO (ROADMAP) --- */
+.treasure-map {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    margin: 30px 0 80px 0;
 }
 
-.roadmap-item {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+.map-path-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.8;
 }
 
-.number-badge {
+.treasure-map .map-step {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.5);
+    transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.treasure-map .map-step.revealed {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+}
+
+.treasure-map .number-badge {
     background-color: #facc15;
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     flex-shrink: 0;
+    position: relative;
+    z-index: 3;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
 }
 
-.item-content h3 {
+.treasure-map .number-badge:hover {
+    transform: scale(1.1);
+}
+
+.treasure-map .map-step.revealed:not(.opened) .number-badge {
+    animation: pulseMap 1.5s infinite;
+}
+
+@keyframes pulseMap {
+    0% { box-shadow: 0 0 0 0 rgba(250, 204, 21, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(250, 204, 21, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(250, 204, 21, 0); }
+}
+
+.treasure-map .step-content {
+    position: absolute;
+    width: 320px;
+    opacity: 0;
+    visibility: hidden;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    border: 1px solid #f1f5f9;
+    pointer-events: none;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    z-index: 1;
+}
+
+.treasure-map .map-step.opened .step-content {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.treasure-map .step-content h3 {
     font-size: 0.95rem;
     font-weight: 700;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
+    color: #0f172a;
 }
 
-.item-content p {
-    font-size: 0.82rem;
-    color: #0f172a;
+.treasure-map .step-content p {
+    font-size: 0.85rem;
+    color: #334155;
+    line-height: 1.5;
+}
+
+.treasure-map .step-content.right {
+    top: 50%;
+    left: 75px;
+    transform: translate(-15px, -50%);
+}
+.treasure-map .map-step.opened .step-content.right {
+    transform: translate(0, -50%);
+}
+
+.treasure-map .step-content.bottom {
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%, -15px);
+}
+.treasure-map .map-step.opened .step-content.bottom {
+    transform: translate(-50%, 0);
 }
 
 /* --- FOOTER COMPLETO --- */
@@ -262,7 +341,6 @@ h1, h2, h3 {
     gap: 25px;
 }
 
-/* Menu de Navegação no Rodapé */
 .footer-nav {
     display: flex;
     gap: 30px;
@@ -279,10 +357,9 @@ h1, h2, h3 {
 }
 
 .footer-nav a:hover {
-    color: #26c6da; /* Fica ciano ao passar o mouse */
+    color: #26c6da;
 }
 
-/* Redes Sociais */
 .footer-social {
     display: flex;
     gap: 15px;
@@ -305,22 +382,13 @@ h1, h2, h3 {
     border-color: #facc15;
 }
 
-/* Copyright */
 .footer-copyright {
     margin-top: 10px;
     font-size: 0.85rem;
     color: rgba(255, 255, 255, 0.6);
-    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Linha divisória bem suave */
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 25px;
     width: 100%;
-}
-
-/* Responsividade do Rodapé */
-@media (max-width: 768px) {
-    .footer-nav {
-        gap: 15px;
-        flex-direction: column;
-    }
 }
 
 .vocational-section {
@@ -387,12 +455,12 @@ h1, h2, h3 {
     flex-shrink: 0;
 }
 
-.step-content h3 {
+.step-content-box h3 {
     font-size: 0.9rem;
     font-weight: 700;
 }
 
-.step-content p {
+.step-content-box p {
     font-size: 0.8rem;
     color: #0f172a;
 }
@@ -473,7 +541,6 @@ h1, h2, h3 {
     color: #26c6da;
 }
 
-/* --- ESTILOS DA PÁGINA TESTE VOCACIONAL --- */
 .header-dark, .footer-dark {
     background-color: #002b66;
 }
@@ -528,12 +595,6 @@ h1, h2, h3 {
     height: auto;
 }
 
-@media (max-width: 768px) {
-    .cards-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
 .resultado-title,
 .quiz-question-title,
 .page-header h1 {
@@ -541,7 +602,6 @@ h1, h2, h3 {
     letter-spacing: -0.02em;
 }
 
-/* --- CONTROLES DE ACESSIBILIDADE --- */
 .accessibility-controls {
     display: flex;
     align-items: center;
@@ -570,11 +630,86 @@ h1, h2, h3 {
     border-color: #facc15;
 }
 
-/* --- IMAGEM INLINE DA LUMI (TÓPICO 05) --- */
 .lumi-inline {
     width: 80px;
     height: auto;
     vertical-align: middle;
     margin-left: 6px;
     margin-bottom: 3px;
+}
+
+.vocational-section .step-content,
+.vocational-section .step-content-box {
+    position: relative !important;
+    width: auto !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    background: transparent !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    pointer-events: auto !important;
+    transform: none !important;
+}
+
+/* --- RESPONSIVIDADE GERAL E DO MAPA --- */
+@media (max-width: 768px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-nav {
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .treasure-map {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding-left: 25px;
+        border-left: 3px dashed #26c6da;
+        margin: 20px 0 40px 20px;
+    }
+
+    .map-path-svg { 
+        display: none; 
+    }
+
+    .treasure-map .map-step {
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        transform: translateX(-30px);
+    }
+    
+    .treasure-map .map-step.revealed { 
+        transform: translateX(0); 
+    }
+
+    .treasure-map .number-badge {
+        position: absolute;
+        left: -54px;
+        top: 0;
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
+
+    .treasure-map .step-content {
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        transform: translateY(-10px) !important;
+        padding: 10px 0;
+        box-shadow: none;
+        border: none;
+        background: transparent;
+    }
+
+    .treasure-map .map-step.opened .step-content {
+        transform: translateY(0) !important;
+    }
 }
